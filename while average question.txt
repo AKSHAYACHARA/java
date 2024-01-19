@@ -1,0 +1,311 @@
+/*
+reverse number 
+657
+756 
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.print("enter the number : ");
+       int num = sc.nextInt();
+       int sum = 0;
+       int rem ;
+       while (num>0) {
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num/10;
+        
+       }
+       System.out.println(sum);
+    }
+}
+
+
+/*
+pallindrome number 
+12321 
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.print("enter the number : ");
+       int num = sc.nextInt();
+       int sum = 0;
+       int rem ;
+       int temp = num;
+       while (num>0) {
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num/10;
+        
+       }if (temp == sum) {
+        System.out.println("tjis number is pallindrome");
+       }else{
+        System.out.println("this number is not a pallindrome");
+       }
+       
+    }
+}
+
+
+
+/*
+armstrong number 
+153 
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       int num = 153;
+       int sum = 0;
+       int rem ;
+       int temp = num;
+       while (num>0) {
+        rem = num % 10;
+        sum = sum + rem * rem * rem;
+        num = num/10;
+        
+       }if (temp == sum) {
+        System.out.println("is number is armstrong");
+       }else{
+        System.out.println("this number is not a armstrong");
+       }
+       
+    }
+}
+
+
+
+/*
+perfect number : 
+6 
+1 2 3 
+1 + 2 + 3 => 6 
+
+8 
+2 2 2 =>6 not perfect number 
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     {  
+          
+        Scanner sc=new Scanner(System.in);         
+        System.out.print("Enter the number: ");  
+         int n=sc.nextInt();  
+        int i=1; 
+        int  sum=0;  
+        while(i <= n/2)  
+        {  
+        if(n % i == 0)  
+        {  
+        sum = sum + i;  
+        }  
+        i++;  
+        } 
+        if(sum==n)  
+        {  
+        
+        System.out.println(n+" is a perfect number.");  
+        } 
+        else  
+        System.out.println(n+" is not a perfect number.");   
+        }  
+        }  
+    }
+
+
+
+
+/*
+neon number 
+9 ka square 
+81 => 8+1=(9) 
+
+ 
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     { 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the number to chack neon number or not = ");
+        int num = sc.nextInt();
+        int sq=num*num;
+        int sum=0;
+        while (sq>0) {
+            int r = sq %10;
+            sum+=r;
+            sq/=10;
+        }
+        if (num == sum) {
+            System.out.println(num+"is a neon number ");
+        }else{
+            System.out.println(num+"is not neon number ");
+        }
+
+     }
+        }  
+    }
+
+
+
+
+/*
+prime number
+a)check number prime 
+b)1--->100 prime number
+
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main 
+
+{
+    public static void main (String[] args)
+    {		
+        int i =0;
+        int num =0;
+        String  primeNumbers = "";
+ 
+        for (i = 1; i <= 100; i++)         
+        { 		  	  
+           int counter=0; 	  
+           for(num =i; num>=1; num--)
+       {
+              if(i%num==0)
+          {
+          counter = counter + 1;
+          }
+       }
+       if (counter ==2)
+       {
+        
+          primeNumbers = primeNumbers + i + " ";
+       }	
+        }	
+        System.out.println("Prime numbers from 1 to 100 are :");
+        System.out.println(primeNumbers);
+    }
+}
+
+
+
+/*
+factorial 
+5 
+1*2*3*4*5
+
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main 
+
+{
+    public static void main (String[] args)
+    {	Scanner sc = new Scanner(System.in);
+        System.out.print("enter the number ");	
+        int number = sc.nextInt();
+        int i,fact=1;
+       
+        for(i=1;i<=number;i++){
+            fact=fact*i;
+        }
+        System.out.println("Factorial of "+number+" is: "+fact);
+    }
+}
+
+
+/*
+factorial 
+5 
+1*2*3*4*5
+
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main 
+
+{
+    public static void main (String[] args)
+    {	Scanner sc = new Scanner(System.in);
+        System.out.print("enter the number ");	
+        int number = sc.nextInt();
+        int i,fact=1;
+       
+        for(i=1;i<=number;i++){
+            fact=fact*i;
+        }
+        System.out.println("Factorial of "+number+" is: "+fact);
+    }
+}
+
+
+
+/*
+fibonacci series 
+0 1 1 2 3 5 
+
+*/
+
+//import java.util.*;
+
+import java.util.Scanner;
+
+public class Main 
+
+{
+    public static void main (String[] args)
+    {	
+        int n1=0;
+        int n2=1;
+        int n3;
+        int count=5;    
+        System.out.print(n1+" "+n2);
+           
+        for(int i=2;i<count;++i) 
+        {    
+         n3=n1+n2;    
+         System.out.print(" "+n3);    
+         n1=n2;    
+         n2=n3;    
+    }
+}
+}
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+/*
+1)C program to find out whether a given year is a leap year or not:
+*/
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) {
+      Scanner wd = new Scanner(System.in);
+      System.out.println("enter the year to chack leaper or not ");
+      int year = wd.nextInt();
+      if (year%4==0) {
+        System.out.println("Leaper year");
+      }else{
+        System.out.println("not Leaper year");
+      }
+    }
+}
