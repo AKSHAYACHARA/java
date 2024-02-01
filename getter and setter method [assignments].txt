@@ -1,0 +1,621 @@
+// short print by default value 
+// char 
+// float 
+// double 
+// long 
+// int 
+// boolean 
+// byte 
+class A {
+    short a ;
+    
+
+ void ak()
+{
+    System.out.println("the value of a " + a );
+    
+}
+}
+public class Main{
+    char b;
+    float c;
+    double d;
+    long e;
+    int f;
+    boolean g;
+    byte h;
+public static void main(String []args)
+{
+   
+   A obj = new A();
+   Main obj1 = new Main();
+   obj.ak();
+   System.out.println(obj1.b);
+   System.out.println("float by default value is " + obj1.c);
+   System.out.println("double by default value is " + obj1.d);
+   System.out.println("long by default value is " + obj1.e);
+   System.out.println("int by default value is " + obj1.f);
+   System.out.println("boolean by default value is " + obj1.g);
+   System.out.println("byte by default value is " + obj1.h);
+}
+
+}
+
+
+// instance vairable without this :
+// two variable 
+// add()  
+// sub() 
+// multi()
+// div()
+// Main class k 
+// main method access 
+public class Main{
+    int a ;
+    int b ;
+    Main(int k,int l)
+    {
+        a = k;
+        b = l;
+    }
+    void add()
+    {
+        int c = a + b;
+        System.out.println("the addtion value of c " + c);
+    }
+    void sub()
+    {
+        int c = a - b;
+        System.out.println("the substration value of c " + c);
+    }
+    void multi()
+    {
+        int c = a * b;
+        System.out.println("the multiplication value of c " + c);
+
+    }
+    void div()
+    {
+        int c = a/b;
+        System.out.println("the divition value of c " + c);
+
+    }
+    public static void main(String[]args)
+
+    {
+       Main g = new Main(23, 10);
+       g.add();
+       g.sub();
+       g.multi();
+       g.div();
+    }
+}
+
+
+
+// two number addition through instance vairable without this but local vairable name also same 
+class A 
+{
+    int a;
+    int b;
+    A(int a,int b)
+    {
+        a = a;
+        b = b;
+    }
+    void add ()
+    {
+        int c = a + b;
+        System.out.println("the value of addition " + c);
+    }
+}
+public class Main
+{
+    public static void main(String[] args) {
+        A k = new A(23, 12);
+        k.add();
+    }
+}
+
+
+
+
+// two number addition through instance vairable with this keyword but local vairable name also same 
+class A 
+{
+    int a;
+    int b;
+    A(int a,int b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+    void add ()
+    {
+        int c = a + b;
+        System.out.println("the value of addition " + c);
+    }
+}
+public class Main
+{
+    public static void main(String[] args) {
+        A k = new A(23, 12);
+        k.add();
+    }
+}
+
+
+// instance variable : 
+// int a ,int b 
+// constructor access [this part]
+// method print 
+// Main class 
+// access 
+class A 
+{
+    int a;
+    int b;
+    A(int a,int b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+    void show ()
+    {
+    
+        System.out.println(a + " value of a ");
+        System.out.println(b + " value of b ");
+
+    }
+}
+public class Main
+{
+    public static void main(String[] args) {
+        A k = new A(23, 12);
+        k.show();
+    }
+}
+
+
+
+// instance variable : 
+// byte a ,short b 
+// constructor access [this part]
+// method print 
+// Main class 
+// access 
+class A 
+{
+    byte a;
+    short b;
+    A(byte a,short b)
+    {
+        this.a = a;
+        this.b = b;
+    }
+    void show ()
+    {
+    
+        System.out.println(a + " byte value of a ");
+        System.out.println(b + " short value of b ");
+
+    }
+}
+public class Main
+{
+    public static void main(String[] args) {
+        A k = new A((byte)20,(short)3000);
+        k.show();
+    }
+}
+
+
+
+// instance variable : 
+// boolean a ,long b 
+// constructor access [this part]
+// method print 
+// Main class 
+// access 
+
+import java.util.Scanner;
+
+class A 
+{
+   boolean a ;
+   long b;
+   A (boolean a , long b)
+   {
+    this.a = a;
+    this.b = b;
+   }
+   void print ()
+   {
+    System.out.println(a + " value of a ");
+    System.out.println(b + " value of b ");
+
+   }
+}
+
+public class Main
+{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter boolean value ");
+    boolean a = sc.nextBoolean();
+    System.out.println("enter long value ");
+    long b = sc.nextLong();
+
+    A k = new A(a, b);
+    k.print();
+  }
+}
+
+
+
+
+// short value print through getter setter method 
+
+import java.util.*;
+
+class A 
+{
+  private short a;
+  //setter mathod
+  void setA(short a)
+  {
+    this.a = a;
+  }
+  //getter mathod
+   short getA() {
+      return a;
+  }
+  
+   
+}
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the short a value ");
+        short a = sc.nextShort();
+        A k = new A();
+        k.setA((short)a);
+        System.out.println(k.getA());
+    }
+}
+
+
+// byte value print through getter setter method 
+// boolean value print through getter setter method
+// char value print through getter setter method
+// long value print through getter setter method 
+// double value print through getter setter method 
+// float value print through getter setter method 
+
+import java.util.Scanner;
+
+public class Main
+{ 
+   private boolean a;
+   private char b;
+   private long c;
+   private double d;
+   private float e;
+   private byte f;
+  // setter mathod
+   void satA(boolean a,char b,long c,double d, float e, byte f)
+   {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    this.d = d;
+    this.e = e;
+    this.f = f;
+   }
+ //gatter mothed
+
+ boolean getA()
+ {
+   return a;
+ }
+ char getA1()
+ {
+   return b;
+ }
+ long getA2()
+ {
+   return c;
+ }
+ double getA3()
+ {
+   return d;
+ }
+ float getA4()
+ {
+   return e;
+ }
+ byte getA5()
+ {
+   return f;
+ }
+
+ 
+
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the boolean value ");
+    boolean a = sc.nextBoolean();
+    System.out.println("enter the char value ");
+    char b = sc.next().charAt(0);
+    System.out.println("enter the long value ");
+    long c = sc.nextLong();
+    System.out.println("enter the double value ");
+    double d = sc.nextDouble();
+    System.out.println("enter the float value ");
+    float e = sc.nextFloat();
+    System.out.println("enter the byte value ");
+    byte f = sc.nextByte();
+    Main k = new Main();
+    k.satA(a, b, c, d, e, f);
+    System.out.println(k.getA());
+    System.out.println(k.getA1());
+    System.out.println(k.getA2());
+    System.out.println(k.getA3());
+    System.out.println(k.getA4());
+    System.out.println(k.getA5());
+    
+  }
+}
+
+
+
+// four number addition through getter settor 
+
+import java.util.Scanner;
+
+public class Main
+{
+  private int a,b,c,d;
+   
+   void setA(int a,int b,int c,int d)
+   {
+       this.a=a;
+       this.b=b;
+       this.c=c;
+       this.d=d;
+   }
+   int getA()
+   {
+    return a;
+   }
+   int getA1()
+   {
+    return b;
+   }
+   int getA2()
+   {
+    return c;
+   }
+   int getA3()
+   {
+    return d;
+   }
+   void add()
+   {
+    int e = a+b+c+d;
+    System.out.println(e + " four value addition value ");
+   }
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("value of a");
+    int a = sc.nextInt();
+    System.out.println("value of b");
+    int b = sc.nextInt();
+    System.out.println("value of c");
+    int c = sc.nextInt();
+    System.out.println("value of d");
+    int d = sc.nextInt();
+    Main k = new Main();
+    k.setA(a, b, c, d);
+    k.add();
+  }
+}
+
+
+
+// multiplication number four through getter settor
+
+import java.util.Scanner;
+
+public class Main
+{
+  private int a,b,c,d;
+   
+   void setA(int a,int b,int c,int d)
+   {
+       this.a=a;
+       this.b=b;
+       this.c=c;
+       this.d=d;
+   }
+   int getA()
+   {
+    return a;
+   }
+   int getA1()
+   {
+    return b;
+   }
+   int getA2()
+   {
+    return c;
+   }
+   int getA3()
+   {
+    return d;
+   }
+   void multi()
+   {
+    int e = a*b*c*d;
+    System.out.println(e + " four value multiplication value ");
+   }
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("value of a");
+    int a = sc.nextInt();
+    System.out.println("value of b");
+    int b = sc.nextInt();
+    System.out.println("value of c");
+    int c = sc.nextInt();
+    System.out.println("value of d");
+    int d = sc.nextInt();
+    Main k = new Main();
+    k.setA(a, b, c, d);
+    k.multi();
+  }
+}
+
+
+import java.util.Scanner;
+
+class A {
+    String email;
+    String password;
+    String name;
+    int contact;
+    String address;
+    String stream;
+    String language;
+    float percentage;
+
+    void setA(String email, String password, String name, int contact, String address, String stream, String language, float percentage) {
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.contact = contact;
+        this.address = address;
+        this.stream = stream;
+        this.language = language;
+        this.percentage = percentage;
+    }
+
+    String getA() {
+        return email;
+    }
+
+    String getA1() {
+        return password;
+    }
+
+    String getA2() {
+        return name;
+    }
+
+    int getA3() {
+        return contact;
+    }
+
+    String getA4() {
+        return address;
+    }
+
+    String getA5() {
+        return stream;
+    }
+
+    String getA6() {
+        return language;
+    }
+
+    float getA7() {
+        return percentage;
+    }
+    void print()
+    {
+      System.out.println(email);
+      System.out.println(password);
+      System.out.println(name);
+      System.out.println(contact);
+      System.out.println(address);
+      System.out.println(stream);
+      System.out.println(language);
+      System.out.println(percentage);
+
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter email");
+        String email = sc.nextLine();
+        System.out.println("enter password");
+        String password = sc.nextLine();
+        System.out.println("enter name");
+        String name = sc.nextLine();
+        System.out.println("enter contact");
+        int contact = sc.nextInt();
+        sc.nextLine(); // Consume the newline left by nextInt()
+        System.out.println("enter address");
+        String address = sc.nextLine();
+        System.out.println("enter stream");
+        String stream = sc.nextLine();
+        System.out.println("enter language");
+        String language = sc.nextLine();
+        System.out.println("enter percentage");
+        float percentage = sc.nextFloat();
+
+        A k = new A();
+        k.setA(email, password, name, contact, address, stream, language, percentage);
+
+        System.out.println(k.getA());
+        System.out.println(k.getA1());
+        System.out.println(k.getA2());
+        System.out.println(k.getA3());
+        System.out.println(k.getA4());
+        System.out.println(k.getA5());
+        System.out.println(k.getA6());
+        System.out.println(k.getA7());
+        k.print();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

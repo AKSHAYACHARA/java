@@ -1,0 +1,509 @@
+// 1)
+// Main class
+// a+b
+
+// return and no argument :int 
+// contant 
+// user input 
+
+public class Main{
+    int show(){
+        int a = 10;
+        int b = 20;
+        int c = a + b;
+        System.out.println(c + " ");
+        return c;
+    }
+    public static void main(String[] args) {
+        Main k = new Main();
+        k.show();
+    }
+}
+
+
+// 1)
+// Main class
+// a+b
+
+// return and no argument :int 
+// contant 
+// user input 
+
+import java.util.*;
+
+public class Main{
+    int show(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " ");
+        return c;
+    }
+    public static void main(String[] args) { 
+         Main k = new Main();
+        k.show();
+    }
+}
+
+// 2)
+// class A 
+// show1 :a-b :return and no argument :int 
+// show2 :a*b :return and no argument :int 
+// show3 :a/b :return and no argument :int 
+
+// Main class k main method :access 
+
+// contant 
+// user input 
+class A{
+    int show1(){
+        int a = 20;
+        int b = 10;
+        int c = a-b;
+        System.out.println(c + " ");
+        return c;
+    }
+    int show2(){
+        int a = 12;
+        int c = 2;
+        int b = a*c;
+        System.out.println(b + " ");
+        return b;
+    }
+    int show3(){
+        int a = 20;
+        int b = 10;
+        int c = a/b;
+        System.out.println(c + " ");
+        return 0;
+    }
+}
+public class Main{
+    public static void main (String[]args){
+     
+        A k = new A();
+        k.show1();
+        k.show2();
+        k.show3();
+    
+ }
+
+}
+
+// 2)
+// class A 
+// show1 :a-b :return and no argument :int 
+// show2 :a*b :return and no argument :int 
+// show3 :a/b :return and no argument :int 
+
+// Main class k main method :access 
+
+// contant 
+// user input 
+import java.util.*;
+class A{
+    int show1(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value b ");
+        int b = sc.nextInt();
+        int c = a-b;
+        System.out.println(c + " ");
+        return c;
+    }
+    int show2(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value b ");
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println(c + " ");
+        return c;
+    }
+    int show3(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value b ");
+        int b = sc.nextInt();
+        int c = a/b;
+        System.out.println(c + " ");
+        return c;
+    }
+}
+public class Main{
+    public static void main (String[]args){
+     
+        A k = new A();
+        k.show1();
+        k.show2();
+        k.show3();
+    
+ }
+
+}
+
+
+// 3)
+// class A 
+// show1 :a+b :no return and no argument 
+// class B
+// show2 :a-b :no return and argument 
+// class C
+// show3 :a*b : return and no argument 
+// Main class 
+// method access 
+// constant 
+// user input
+class A {
+    void add (){
+        int a = 12;
+        int b = 23;
+        int c = a + b;
+        System.out.println(c + " ");
+    }
+} 
+class B {
+    void sub(int a , int b){
+        int c = a-b;
+        System.out.println(c + " ");
+    }
+}
+class C {
+    int multi(){
+        int a = 12;
+        int b = 12;
+        int c = a*b;
+        System.out.println(c + " ");
+        return 0;
+    }
+}
+public class Main{
+    public static void main(String[]args){
+      A k = new A();
+      k.add();
+      B k1 = new B();
+      k1.sub(23, 10);
+      C k2 = new C();
+      k2.multi();
+    }
+}
+
+
+
+// 3)
+// class A 
+// show1 :a+b :no return and no argument 
+// class B
+// show2 :a-b :no return and argument 
+// class C
+// show3 :a*b : return and no argument 
+// Main class 
+// method access 
+// constant 
+// user input
+import java.util.*;
+class A {
+    void add (){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the add value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the add value b ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " ");
+    }
+} 
+class B {
+    void sub(int a , int b){
+        int c = a-b;
+        System.out.println(c + " ");
+    }
+}
+class C {
+    int multi(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the multi value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the multi value b ");
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println(c + " ");
+        return c;
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the sub value a ");
+        int a = sc.nextInt();
+        System.out.println("enter the sub value b ");
+        int b = sc.nextInt();
+      A k = new A();
+      k.add();
+      C k2 = new C();
+      k2.multi();
+      B k1 = new B();
+      k1.sub(a, b);
+      
+    }
+}
+
+
+// 4)
+// return and no argument 
+// class A 
+// short show1(): short a 
+// byte 
+// float 
+// long 
+// double 
+// char 
+// string 
+// boolean 	
+// covariant return type
+
+class A {
+   short show1(){
+    short a = 12;
+    System.out.println(a + " short value ");
+    return a;
+   }
+   byte show2(){
+    byte a = 13;
+    System.out.println(a + " byte value  ");
+    return a;
+   }
+   float show3(){
+    float a = 14f;
+    System.out.println(a + " float value ");
+    return a;
+   }
+   long show4(){
+    long a =123445632;
+    System.out.println(a + " long value ");
+    return a;
+   }
+   double show5(){
+    double a = 98849.00;
+    System.out.println(a + " double value ");
+    return a;
+   }
+   char show6(){
+    char a = 'x';
+    System.out.println(a + " char value ");
+    return a;
+   }
+   String show7(){
+    String a = "akshay";
+    System.out.println(a + " String value ");
+    return a;
+   }boolean show8(){
+    boolean a = true;
+    System.out.println(a + " boolean value ");
+    return a;
+   }
+   A show(){
+    System.out.println(" hello akshay ");
+    return this;
+   }
+
+}
+public class Main{
+    public static void main(String []args){
+      A k = new A();
+      k.show1();
+      k.show2();
+      k.show3();
+      k.show4();
+      k.show5();
+      k.show6();
+      k.show7();
+      k.show8();
+      System.out.println(k.show());
+    }
+}
+
+
+
+// 5)
+// class A 
+// pallindrome : return and no argument  
+// factorial :no return and no argument  
+// fibonacci :no return and  argument  
+// neon : return and no argument  
+// armstrong : return and no argument  
+// swap : return and no argument  
+// reverse: return and no argument  
+// gender :no return and no argument  
+// user input 
+import java.util.*;
+import java.util.Scanner;
+
+class A {
+    int pallindrome(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the pallindrome number to chack pallindrome or not ");
+        int num = sc.nextInt();
+        int rem;
+        int sum = 0;
+        int temp = num;
+        while (num>0) {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        if (temp == sum)
+        {
+            System.out.println("this number is pallindrome ");
+        }
+        else
+        {
+            System.out.println(" this number is not pallindrome ");
+        }
+        return 0;
+    }
+    void factorial(){
+        // no return and no argument
+        Scanner sc = new Scanner(System.in);
+        System.out.println("factorial number ");
+        int num = sc.nextInt();
+        int fact = 1;
+        for(int i = 1; i<=num;i++)
+        {
+            fact = fact * i;
+            
+        }
+        System.out.println(fact + " ");
+
+    } 
+     void fibonacci (int num){
+        // :no return and  argument
+        int n1 = 0 , n2 = 1 , n3;
+        System.out.print( n1 + " " + n2);
+        for(int i = 1; i<=num;i++)
+        {
+            n3 = n1 + n2;
+            System.out.print(" " + n3 );
+            n1 = n2;
+            n2 = n3;
+        }
+     }
+      int neon (){
+        // : return and no argument
+        Scanner sc = new Scanner(System.in);
+        System.out.println("neon number or not ");
+        int n = sc.nextInt();
+        int m = n * n;
+        int rem;
+        int sum = 0;
+        while (m>0) {
+
+            rem = m%10;
+            sum = sum + rem;
+            m = m/10;
+        }
+        if (n == sum)
+        {
+            System.out.println("neon number ");
+        }
+        else{
+            System.out.println("not neon number ");
+        }
+        return 0;
+      }
+      int armstrong(){ 
+        // : return and no argument 
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int sum = 0;
+        int rem ;
+        int temp = num;
+    while (num>0) {
+        rem = num % 10;
+        sum = sum + rem * rem * rem;
+        num = num/10;
+        
+       }if (temp == sum) {
+        System.out.println("is number is armstrong");
+       }else{
+        System.out.println("this number is not a armstrong");
+       }
+       return 0;
+    }
+    int swap(){
+        // : return and no argument
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println(" swap value of a is" + a + " swap value of b is" + b);
+        return 0;
+    } 
+     int reverse(){
+        // : return and no argument
+        Scanner sc = new Scanner(System.in);
+       System.out.print("enter the reverse number : ");
+       int num = sc.nextInt();
+       int sum = 0;
+       int rem ;
+       while (num>0) {
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num/10;
+        
+       }
+       System.out.println("reverse number is " + sum);
+        return 0 ;
+
+     }
+      void gender(){
+        // :no return and no argument
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter your gender ");
+        char a = sc.next().charAt(0);
+        if (a == 'm' || a == 'M') {
+            System.out.println("male");
+        }
+        else if (a == 'f' || a == 'F') {
+            System.out.println("female");
+        }
+        else
+        {
+          System.out.println("invalid ");
+        }
+     }
+} 
+public class Main{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("fibonacci series ");
+    int num = sc.nextInt();
+    A k = new A();
+    k.pallindrome();
+    k.factorial();
+    k.fibonacci(num);
+    k.neon();
+    k.armstrong();
+    k.swap();
+    k.reverse();
+    k.gender();
+
+  }
+}
+
+
+
+
+
+
+
