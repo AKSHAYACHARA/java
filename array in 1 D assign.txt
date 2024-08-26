@@ -1,0 +1,197 @@
+// array in 1 D
+// 1)
+// 23,78,56,34,21,89,67 
+
+// print :23,78,56,34,21,89,67 
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a []= {23,78,56,34,21,89,67};
+        for(int i = 0;i<a.length;i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+
+
+// 2)
+// 23,78,56,34,21,89,67 
+
+// print:
+// 67,89,21,34,56,78,23
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a []= {23,78,56,34,21,89,67};
+        for(int i = a.length-1;i>=0;i--) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+
+
+// 3)through loop 
+
+// 23,78,56,34,21,89,67 ,88
+
+// print :
+// 23,78,56,34,88,67,89,21
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a []= {23,78,56,34,21,89,67,88};
+        for(int i = 0;i<a.length/2;i++) {
+            
+                System.out.print(a[i] + " ");   
+        }
+        for(int j = a.length-1;j>3;j--){
+            System.out.print(a[j] + " ");
+        }
+    }
+}
+
+
+// 4)through loop 
+
+// 23,78,56,34,21,89,67 ,88
+
+// print :
+// 56,34,21,89
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a[] = {23,78,56,34,21,89,67,88};
+        for(int i = 2; i <6 ; i++){
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+
+// 5)
+
+// through loop 
+
+// 23,78,56,34,21,89,67 ,88
+
+// print :
+// 89,21,34,56,78
+
+public class Main{
+    public static void main(String[]args){
+        int x[] = {23,78,56,34,21,89,67,88};
+        for(int i = x.length-3; i>x.length-8;i--){
+            System.out.print(x[i] + " ");
+        }
+    }
+}
+
+
+
+// 6)
+// through loop 
+
+// 23,78,56,34,21,89,67 ,88
+
+// print :
+// 34,56,78,23,21,89,67,88
+
+public class Main{
+    public static void main(String[]args){
+        int x[] = {23,78,56,34,21,89,67,88};
+        for(int i = 3; i>=0;i--){
+            System.out.print(x[i] + " ");
+        }
+        for(int j = 4;j<x.length;j++){
+            System.out.print(x[j] + " ");
+        }
+    }
+}
+
+
+
+// 7)
+// through loop 
+
+// 23,78,56,34,21,89,67
+
+// print :
+// mid element print 
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a[] = {23,78,56,34,21,89,67,25,60,22,44};
+        for(int i = (a.length/2);i<(a.length/2)+1;i++){
+            System.out.println(a[i] + " ");
+        }
+    }
+}
+
+
+8)
+through loop 
+
+23,78,56,34,21,89,67
+
+print :
+mid element print table 
+
+public class Main {
+  public static void main(String[] args) {
+    int arr [] = {23,78,56,34,21,89,67};
+    int mid=arr.length/2;
+    System.out.println(arr[mid]);
+    System.out.println("Print Table of Middle");
+    for( int i =1; i<=10; i++)
+    {
+         System.out.println(arr[mid]*i);
+    }
+  }
+}
+
+
+
+// 9)
+
+// through loop 
+
+// 23,78,56,34,21,89,67
+
+// print :
+// last element print 
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a [] = {23,78,56,34,21,89,67};
+        int last_element = a.length-1;
+        System.out.print(a[last_element] + " ");
+    }
+}
+
+
+// 10)
+// through loop 
+
+// 23,78,56,34,21,89,67
+
+// print :
+// last element print table 
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a [] = {23,78,56,34,21,89,67};
+        int last_element = a.length-1;
+        for(int i=1;i<=10;i++){
+            System.out.print(a[last_element]*i + " ");
+        }
+    }
+}

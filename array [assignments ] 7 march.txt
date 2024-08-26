@@ -1,0 +1,880 @@
+//1)1,2,3,4,5,6,7,8,9,10
+
+//even number sum 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter size: ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("Enter value: =  ");
+        for (int i = 0; i <= a.length - 1; i++) {
+            
+            a[i] = sc.nextInt();
+        }
+        for (int j = 0; j < a.length; j++) {
+            System.out.print(a[j] + " ");
+        }
+        System.out.println();
+        int sum = 0;
+        for (int k = 0; k < a.length; k++) {
+            if (a[k] % 2 == 0) {
+                sum = sum + a[k];
+            }
+        }
+        System.out.println("Sum of Even number is : = " + sum);
+    }
+}
+
+------------------------------------------------------------------------------------------
+
+
+// 2)
+// 1,2,3,4,5,6,7,8,9,10
+
+// odd number sum 
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        for(int i=0;i<size;i++){
+            System.out.println(" enter value ");
+            a[i] = sc.nextInt();
+        }
+        int sum = 0;
+       for(int j = 0;j<size;j++ ){
+        if(a[j]%2==1){
+        sum = sum + a[j];
+        }
+       }
+       System.out.println(sum + " ");
+    }
+}
+
+
+------------------------------------------------------------------------------
+
+
+// 3)
+// 1,2,3,4,5,6,7,8,9,10
+
+// even number index +number  
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        for(int i=0;i<size;i++){
+            System.out.println(" enter value ");
+            a[i] = sc.nextInt();
+        }
+    
+       for(int j = 0;j<size;j++ ){
+        if(a[j]%2==0){
+        
+        System.out.println("Index is : "+ j + " evan number  " +  a[j] );
+    }
+        }
+       }
+      
+}
+
+------------------------------------------------------------------------------------------------
+
+
+// 4)
+// 1,2,3,4,5,6,7,8,9,10
+
+// odd number index +number  
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        for(int i=0;i<size;i++){
+            System.out.println(" enter value ");
+            a[i] = sc.nextInt();
+        }
+    
+       for(int j = 0;j<size;j++ ){
+        if(a[j]%2==1){
+        
+        System.out.println("Index is : "+ j + " odd number  " +  a[j] );
+    }
+        }
+       }
+      
+}
+
+------------------------------------------------------------------------------------------------
+
+
+// 5)
+// two array 
+// a[] =1,2,3,4,5
+// b[] =1,2,3,4,5
+
+// sum[]=a[] +b[]
+  
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int b[] = new int[size];
+        for(int i=0;i<size;i++){
+            System.out.print(" enter value first array ");
+            a[i] = sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+            System.out.print(a[i]+" ");
+        }
+        for(int i=0;i<size;i++){
+            System.out.print(" enter value second array ");
+            b[i] = sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+            System.out.print(b[i]+" ");
+        }
+        int sum[] = new int[size];
+        for(int k = 0;k<size;k++){
+           
+                sum[k] =  a[k] + b[k];
+            
+        }
+        for(int l =0; l<size;l++){
+        System.out.print(sum[l] + " ");
+        }
+       }
+      
+}
+
+
+------------------------------------------------------------------------------------------------
+
+// 6)
+// a[] =sum 
+// b[] =sum 
+// a+b 
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int b[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        for(int j = 0;j<a.length;j++){
+            System.out.print(a[j] + " ");
+        }
+        System.out.println("enter the value of array 'B'");
+        for(int i=0;i<b.length;i++){
+            b[i] = sc.nextInt();
+        }
+        for(int j = 0;j<b.length;j++){
+            System.out.print(b[j] + " ");
+        }
+        int sum = 0;
+        for(int k = 0;k<a.length;k++){
+            sum = sum  + a[k] + b[k] ;
+        }
+        System.out.println(" ");
+        System.out.println("total sum a[] and b[]" + sum );
+
+    }
+}
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
+// 7)
+// a[]=45,78,67,23,89
+
+// b[] =1,2,3,4,5,6 
+
+// a-b 
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int b[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        for(int j = 0;j<a.length;j++){
+            System.out.print(a[j] + " ");
+        }
+        System.out.println("enter the value of array 'B'");
+        for(int i=0;i<b.length;i++){
+            b[i] = sc.nextInt();
+        }
+        for(int j = 0;j<b.length;j++){
+            System.out.print(b[j] + " ");
+        }
+        int sum[] = new int[size];
+        for(int k = 0 ; k<a.length ; k++){
+            sum[k] = a[k]-b[k];
+            System.out.print(sum[k] + " ");
+        }
+
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------
+
+
+
+// 8)
+// a[]=45,78,67,23,89 =>total addition 
+
+// b[] =1,2,3,4,5,6 =>total addition 
+
+// a-b 
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int b[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        for(int j = 0;j<a.length;j++){
+            System.out.print(a[j] + " ");
+        }
+        System.out.println("enter the value of array 'B'");
+        for(int i=0;i<b.length;i++){
+            b[i] = sc.nextInt();
+        }
+        for(int j = 0;j<b.length;j++){
+            System.out.print(b[j] + " ");
+        }
+        int sum = 0;
+        int sum1 = 0;
+        for(int k = 0 ; k<a.length ; k++){
+            sum = sum + a[k] ;
+            
+        }
+        System.out.println(" ");
+        System.out.print(sum + " ");
+        for(int l = 0 ; l<b.length ; l++){
+            sum1 = sum1 + b[l] ;
+        }
+        System.out.println(" ");
+        System.out.print(sum1 + " ");
+        System.out.println(" ");
+        System.out.println( "array of a mines array of b " + (sum-sum1) );
+
+
+
+    }
+}
+
+
+----------------------------------------------------------------------------------------------------
+
+
+// 9)
+// array :check target value present 
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int target = sc.nextInt();
+        
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        for(int j = 0;j<a.length;j++){
+            if(a[j] == target){
+            System.out.print(" yes present " + a[j]);
+            }
+        }
+       
+        
+
+    }
+}
+
+--------------------------------------------------------------------------------------------------
+
+
+// 10)
+// array :check target index present 
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int target = sc.nextInt();
+        
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        for(int j = 0;j<a.length;j++){
+            if(a[j] == target){
+            System.out.print(" yes present " + j);
+            }
+        }
+       
+        
+
+    }
+}
+
+--------------------------------------------------------------------------------------
+
+
+// 11)
+// array :check target count 
+// 1,2,3,6,3,5,3,6,7,8,3,9,10,3
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int target = sc.nextInt();
+        
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        int count = 0;
+        for(int j = 0;j<a.length;j++){
+            if(a[j] == target){
+                count++;
+            System.out.println(" target count  " + count);
+            }
+        }
+       
+        
+
+    }
+}
+
+---------------------------------------------------------------------------------------
+
+
+// 12)
+// array :check target count and index print 
+// 1,2,3,6,3,5,3,6,7,8,3,9,10,3
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int target = sc.nextInt();
+        
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        int count = 0;
+        for(int j = 0;j<a.length;j++){
+            if(a[j] == target){
+                count++;
+            System.out.println(" target count  " + count + "index " + j );
+            }
+        }
+       
+        
+
+    }
+}
+
+
+----------------------------------------------------------------------------------------------
+
+
+// 13)
+// array :check target sum 
+// 1,2,3,6,3,5,3,6,7,8,3,9,10,3
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int target = sc.nextInt();
+        
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        int count = 0;
+        for(int j = 0;j<a.length;j++){
+            if(a[j] == target){
+                count = count + a[j];
+            System.out.println(" target count  " + count + "index " + j );
+            }
+        }
+       
+        
+
+    }
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+// 15)
+// a[] =12,45,67,34,98
+// b[] =23,45,67,35,9
+
+// common element print +index
+  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int b[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        for(int j = 0;j<a.length;j++){
+            System.out.print(a[j] + " ");
+            
+        } 
+        System.out.println("enter the value of array 'B'"); 
+        for(int i=0;i<b.length;i++){
+            b[i] = sc.nextInt();
+        }
+        for(int j = 0;j<b.length;j++){
+            System.out.print(b[j] + " ");
+            
+        }  
+        for(int k=0;k<a.length;k++){
+            if (a[k] == b[k]) {
+                System.out.println("common element " + a[k] + " index " + k);
+            }
+        }
+    }
+}
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+// 16)
+// 1,2,3,6,3,5,3,6,7,8,3,9,10,3
+
+// print all element through method 
+// included both ways for each loop and for
+  
+import java.util.*;
+
+public class Main {
+    public static void display(int a[]){
+        for(int i =0 ;i<a.length;i++){
+            System.out.print(a[i] + " ");
+            
+        }
+        System.out.println(" ");
+    }
+    
+    public static void display1(int a[]){
+        //for each loop
+        for(int i:a){
+            System.out.print(i + " ");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter size");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println(" enter value of array ");
+        for(int i = 0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+       
+        display(a);
+        display1(a);
+    }
+}
+
+-------------------------------------------------------------------------------------------------
+
+
+// 17)
+// 1,2,3,6,3,5,3,6,7,8,3,9,10,3
+
+// array sort 
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+         Arrays.sort(a);
+         System.out.println("sorted array");
+           for(int j = 0;j<a.length;j++){
+        
+            System.out.print( a[j] + " ");
+            
+            }
+        }
+       
+    }
+
+
+-------------------------------------------------------------------------------------------
+
+
+// 18)
+// 19,2,3,6,3,5,3,6,7,8,3,9,10,3
+
+// array sorted hone k baad 
+// first element print and last element print 
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+         Arrays.sort(a);
+         System.out.println("sorted array");
+           for(int j = 0;j<a.length;j++){
+            System.out.print( a[j] + " ");
+            }
+            // Printing the first element
+             System.out.println("\nFirst element of sorted array: " + a[0]);
+            // Printing the last element
+             System.out.println("Last element of sorted array: " + a[a.length - 1]);
+            
+            }
+        }
+       
+    
+
+--------------------------------------------------------------------------------------------
+
+
+// 19) no help 
+// 19,2,3,6,3,5,3,6,7,8,3,9,10,3
+
+// array sorted hone k baad 
+// maximum and minimum 
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+         Arrays.sort(a);
+         System.out.println("sorted array");
+           for(int j = 0;j<a.length;j++){
+            System.out.print( a[j] + " ");
+            }
+            int max = a[a.length-1];
+            int min = a[0];
+            System.out.println("maxmimum value of sorted array " + max);
+            System.out.println("minimum value of sorted array " + min);
+            }
+        }
+       
+    
+
+----------------------------------------------------------------------------------------------
+
+
+// 20)
+// array :
+// all element table print 
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+           for(int j = 0;j<a.length;j++){
+            System.out.println(" ");
+            for(int k = 1; k<=10;k++){
+                System.out.print(a[j]*k + " " );
+            }
+            
+            }
+            
+            }
+        }
+       
+    
+
+------------------------------------------------------------------------------------------
+
+
+
+// 21)
+// array :
+// all even element table print 
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+           for(int j = 0;j<a.length;j++){
+            System.out.println(" ");
+            for(int k = 1; k<=10;k++){
+                if(a[j]%2==0){
+                System.out.print(a[j]*k + " " );
+                }
+            }
+            
+            }
+            
+            }
+        }
+       
+    
+-----------------------------------------------------------------------------------------
+
+
+// 22)
+// array :
+// all odd element table print  
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+           for(int j = 0;j<a.length;j++){
+            System.out.println(" ");
+            for(int k = 1; k<=10;k++){
+                if(a[j]%2==1){
+                System.out.print(a[j]*k + " " );
+                }
+            }
+            
+            }
+            
+            }
+        }
+       
+    
+
+-----------------------------------------------------------------------------------------
+
+
+// 23)
+// array :
+// all  element table print reverse
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        
+        for(int j = 0;j<a.length;j++){
+            System.out.println("table of " + a[j] + " in reverce ");
+            for(int k = 10; k>=1;k--){
+                System.out.println(a[j] + " * " + k + " = " + a[j] * k);
+
+            }
+
+            }
+            
+            }
+            
+            }
+        
+       
+ -------------------------------------------------------------------------------------------------
+
+
+// 24)
+// array :
+// all  even element table print reverse
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        
+        for(int j = 0;j<a.length;j++){
+            System.out.println("table of " + a[j] + " in reverce ");
+            for(int k = 10; k>=1;k--){
+                if(a[j]%2==0){
+                System.out.println(a[j] + " * " + k + " = " + a[j] * k);
+                }
+
+            }
+
+            }
+            
+            }
+            
+            }
+        
+       
+    
+
+--------------------------------------------------------------------------------------------
+
+
+// 25)
+// array :
+// all  odd element table print reverse
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        
+        for(int j = 0;j<a.length;j++){
+            System.out.println("table of " + a[j] + " in reverce ");
+            for(int k = 10; k>=1;k--){
+                if(a[j]%2==1){
+                System.out.println(a[j] + " * " + k + " = " + a[j] * k);
+                }
+
+            }
+
+            }
+            
+            }
+            
+            }
+        
+       
+    
+
+-------------------------------------------------------------------------
+
+
+
+
+
+

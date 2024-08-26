@@ -1,0 +1,232 @@
+// 1)airthmetic excpetion 
+// class A 
+// 	show() :airthmetic excpetion does not handle 
+
+// class Main 
+// access :
+class A{
+  void show(){
+
+    int a = 45/0;
+    System.out.println(a);
+  }
+}
+public class Main extends A{
+
+  public static void main(String[] args) {
+    A obj = new A();
+    obj.show();
+  }
+}
+
+--------------------------------------------------------------
+
+// class A 
+// 	show() :airthmetic excpetion   handle 
+
+// class Main 
+// access :
+class A{
+  void show(){
+try{
+    int a = 45/0;
+    System.out.println(a);
+}
+catch(ArithmeticException a){
+  System.out.println("handle exception");
+}
+  }
+}
+public class Main extends A{
+
+  public static void main(String[] args) {
+    A obj = new A();
+    obj.show();
+  }
+}
+
+----------------------------------------------------------------------------	
+
+
+// class A 
+// 	show() :array index out of bound : 
+//  excpetion   handle 
+
+// class Main 
+// access :
+
+class A{
+  void show(){
+try{
+    int a[] = {23,45,12,76,69,23};
+    for(int i=0;i<=a.length;i++){
+      System.out.print(a[i] + " ");
+    }
+}
+catch(ArrayIndexOutOfBoundsException a){
+  System.out.println("handle exception");
+}
+  }
+}
+public class Main extends A{
+
+  public static void main(String[] args) {
+    A obj = new A();
+    obj.show();
+  }
+}
+
+----------------------------------------------------------------------------
+
+
+// class A 
+// 	show() :numberformat expcetions :
+//  excpetion   handle 
+
+// class Main 
+// access :
+
+class A{
+  void show(){
+try{
+    String s = "hello";
+    //String convert into integer
+    int a = Integer.parseInt(s);
+    System.out.println(a);
+    
+}
+catch(NumberFormatException a){
+  System.out.println("handle exception");
+}
+  }
+}
+
+public class Main extends A{
+
+  public static void main(String[] args) {
+    A obj = new A();
+    obj.show();
+  }
+}
+
+
+----------------------------------------------------------------------------
+
+
+// class A 
+// 	show() :nullpointer excpetion :
+//  excpetion   handle 
+
+// class Main 
+// access :
+
+class A{
+  void show(){
+try{
+   String s = null;
+   System.out.println(s.length());
+}
+    
+
+catch(NullPointerException a){
+  System.out.println("handle exception");
+}
+  }
+}
+
+public class Main extends A{
+
+  public static void main(String[] args) {
+    A obj = new A();
+    obj.show();
+  }
+}
+
+
+----------------------------------------------------------------------------
+
+
+// class A
+// airthmetic excpetion   handle 
+
+// class B
+// nullpointer excpetion handle
+
+// class C
+// numberformat expcetions 
+
+// class D 
+// array index out of bound 
+
+// class Main 
+
+class A{
+  static void show(){
+    try{
+      int a = 45/0;
+      System.out.println(a);
+  }
+  catch(ArithmeticException a){
+    System.out.println("handle exception");
+  }
+    }
+  }
+  
+  class B extends A{
+    static void show1(){
+      try{
+         String s = null;
+         System.out.println(s.length());
+      }
+          
+      
+      catch(NullPointerException a){
+        System.out.println("handle exception");
+      }
+        }
+      }
+      
+  class C extends B{
+    static void show2(){
+      try{
+          String s = "hello";
+          //String convert into integer
+          int a = Integer.parseInt(s);
+          System.out.println(a);
+          
+      }
+      catch(NumberFormatException a){
+        System.out.println("handle exception");
+      }
+        }
+      }
+      
+      class D extends C{
+        static void show4(){
+try{
+    int a[] = {23,45,12,76,69,23};
+    for(int i=0;i<=a.length;i++){
+      System.out.print(a[i] + " ");
+    }
+}
+catch(ArrayIndexOutOfBoundsException a){
+  System.out.println("handle exception");
+}
+  }
+}
+
+public class Main extends D {
+
+  public static void main(String[] args) {
+    A.show();
+    B.show1();
+    C.show2();
+    D.show4();
+  }
+}
+
+
+----------------------------------------------------------------------------
+
+
+

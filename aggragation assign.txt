@@ -1,0 +1,632 @@
+
+// 1)
+// A :new file 
+// constructor :two number addition 
+// Main class :
+// access
+Main.java
+public class Main {
+
+    public static void main(String[] args) {
+        A k = new A();
+    }
+}
+
+A.java
+import java.util.*;
+ class A {
+    A(){
+        System.out.println("Add two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+        System.out.println("two value addition " + c);
+    }
+    
+}
+
+....................................................................................
+
+
+2)
+A :new file 
+constructor :two number addition 
+
+B:new file 
+constructor :two number substraction
+
+C :new file 
+constructor :two number mul 
+
+D :new file 
+constructor :two number div 
+
+
+Main class :
+access
+
+user input 
+
+Main.java
+public class Main {
+
+    public static void main(String[] args) {
+        A k = new A();
+        B k1 = new B();
+        C k2 = new C();
+        D k3 = new D();
+    }
+}
+
+A.java
+
+import java.util.*;
+
+class A{
+    A(){
+        System.out.println("Add two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+        System.out.println("two value addition " + c);
+    }
+}
+
+B.java
+
+import java.util.*;
+
+class B {
+     B(){
+        System.out.println("sub two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a-b;
+        System.out.println("two value substraction " + c);
+    }
+}
+
+C.java
+
+import java.util.*;
+
+class C {
+     C(){
+        System.out.println("multi two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println("two value multipliction " + c);
+    }
+}
+
+D.java
+
+import java.util.*;
+
+class D {
+    D(){
+        System.out.println("div two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a/b;
+        System.out.println("two value divition " + c);
+    }
+}
+
+.........................................................................................................
+
+parameterised : 
+
+A :new file 
+constructor :two number addition 
+
+B:new file 
+constructor :two number substraction
+
+C :new file 
+constructor :two number mul 
+
+D :new file 
+constructor :two number div 
+
+
+Main class :
+access
+
+user input 
+
+Main.java
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Add two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        A k = new A(a,b);
+        System.out.println("sub two number");
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        B k1 = new B(c,d);
+        System.out.println("multi two number");
+        int e = sc.nextInt();
+        int f = sc.nextInt();
+        C k2 = new C(e,f);
+        System.out.println("div two number");
+        int g = sc.nextInt();
+        int h = sc.nextInt();
+        D k3 = new D(g,h);
+    }
+}
+
+A.java
+
+
+class A{
+    A(int a,int b){
+        System.out.println("Add two number");
+        int c = a+b;
+        System.out.println("two value addition " + c);
+    }
+}
+
+
+B.java
+
+
+class B {
+     B(int a ,int b){
+        System.out.println("sub two number");
+        int c = a-b;
+        System.out.println("two value substraction " + c);
+    }
+}
+
+C.java
+
+class C {
+     C(int a,int b){
+        System.out.println("multi two number");
+        int c = a*b;
+        System.out.println("two value multipliction " + c);
+    }
+}
+
+
+D.java
+
+class D {
+    D(int a , int b){
+        System.out.println("div two number");
+        int c = a/b;
+        System.out.println("two value divition " + c);
+    }
+}
+
+............................................................................................
+
+
+
+// D.java 
+// add :a)no return and no argument 
+// sub :b)no return and  argument 
+// mul :c) return and no argument 
+// div:d) return and  argument
+// Main.java
+// access
+// user input 
+
+Main.java 
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        
+        D k = new D();
+        k.add();
+        k.div(34, 12);
+        k.multi();
+        k.div(45, 5);
+
+    }
+}
+
+D.java
+
+// add :a)no return and no argument 
+// sub :b)no return and  argument 
+// mul :c) return and no argument 
+// div:d) return and  argument
+
+import java.util.*;
+
+class D {
+   void add(){
+     System.out.println("Add two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+        System.out.println("two value addition " + c);
+
+   }
+
+   void sub(int a,int b){
+        
+        int c = a-b;
+        System.out.println("two value substraction " + c);
+   }
+
+   int multi(){
+        System.out.println("multi two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println("two value multiplication " + c);
+       return c;
+   }
+
+   int div(int a,int b){
+        int c = a/b;
+        System.out.println("two value divition " + c);
+        return c;
+   }
+}
+
+
+..................................................................................................................
+
+
+// getter and settor :user input 
+// D.java 
+// add :method
+// sub : method
+// mul :method
+// div:method
+// Main.java
+// access
+// user input  
+
+Main.java
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        D k = new D();
+        k.add();
+        k.sub();
+        k.multi();
+        k.div();
+
+    }
+}
+
+D.java
+
+import java.util.*;
+class D {
+    int a;
+    int b;
+    void seta(int a,int b){
+        this.a = a;
+        this.b = b;
+    }
+
+    int getB(){
+        return a;
+    }
+    int getB1(){
+        return b;
+    }
+   void add(){
+     System.out.println("Add two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+        System.out.println("two value addition " + c);
+
+   }
+
+   void sub(){
+        
+    System.out.println("sub two number");
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = a-b;
+    System.out.println("two value substraction " + c);
+   }
+
+   void multi(){
+        System.out.println("multi two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println("two value multiplication " + c);
+       
+   }
+
+   void div(){
+    System.out.println("div two number");
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = a/b;
+    System.out.println("two value division " + c);
+   }
+}
+
+........................................................................................................................
+
+
+// ->single level inheritance : 
+// B.java
+// A class
+// add :no return and no argument 
+// sub : no return and  argument 
+// B class ex A 
+// mul :return and no argument 
+// div: return and  argument 
+// Main class :
+// B access 
+// user input 
+
+Main.java
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        B k = new B();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two value sub");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("enter two value div");
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        k.add();
+        k.div(a, b);
+        k.multi();
+        k.sub(c, d);
+
+       
+
+    }
+}
+
+B.java
+
+import java.util.*;
+class A {
+     void add(){
+        System.out.println("Add two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a+b;
+        System.out.println("two value addition " + c);
+
+     }
+
+     void sub(int a,int b){
+        int c = a-b;
+        System.out.println("two value sunstection " + c);
+     }
+}
+
+ class B extends A {
+
+    int multi(){
+        System.out.println("multi two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println("two value multiplication " + c);
+        return c;
+   }
+
+   int div(int a,int b){
+    int c = a/b;
+    System.out.println("two value division " + c);
+    return c;
+   }
+
+}
+
+...................................................................................................................................................
+
+
+// multilevel inheritance 
+// D.java a
+// class A
+// add :no return and no argument 
+// class B ex A
+// sub : no return and  argument 
+// class C ex B
+// mul :return and no argument 
+// class D ex C
+// div: return and  argument 
+// Main .java access 
+
+Main.java
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        D k = new D();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two value sub");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("enter two value div");
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        k.add();
+        k.div(a, b);
+        k.multi();
+        k.sub(c, d);
+
+       
+
+    }
+}
+
+D.java
+
+
+import java.util.*;
+class A {
+    void add(){
+        System.out.println("Add two number");
+           Scanner sc = new Scanner(System.in);
+           int a = sc.nextInt();
+           int b = sc.nextInt();
+           int c = a+b;
+           System.out.println("two value addition " + c);
+   
+      }
+   
+}
+class B extends A{
+    void sub(int a,int b){
+         int c = a-b;
+         System.out.println("two value substraction " + c);
+   }
+
+}
+
+class C extends B{
+        int multi(){
+        System.out.println("multi two number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a*b;
+        System.out.println("two value multiplication " + c);
+        return c;
+   }
+
+}
+
+class D extends C{
+    int div(int a,int b){
+        int c = a/b;
+        System.out.println("two value divition " + c);
+        return c;
+   }
+
+}
+
+
+.......................................................................................................
+
+A.java
+single level inheritance
+
+
+B.java
+multilevel inheritance 
+
+Main.java 
+access 
+
+only make two object 
+
+Z.java
+ class A {
+    void show2(){
+        System.out.println("show2");
+    }
+}
+
+class B extends A{
+    void show3(){
+        System.out.println("show3");
+    }
+}
+class Z extends B{
+    void show4(){
+        System.out.println(" show4 ");
+    }
+}
+
+P.java
+
+class A{
+    void show(){
+        System.out.println("hellooo");
+    }
+}
+class P extends A{
+    void show1(){
+        A k=new A();
+        k.show();
+        System.out.println("show1");
+    }
+}
+
+S.java
+
+public class S {
+    public static void main(String[] args) {
+        P k=new P();
+        k.show1();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

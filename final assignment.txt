@@ -1,0 +1,503 @@
+------------------------------------------------------------
+simple class method paramteries user input code 
+------------------------------------------------------
+1)class final and method non final output :  
+-----
+Ans...
+final class A
+{
+    void show()
+    {
+        System.out.println("Hello");
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        A obj=new A();
+        obj.show();
+    }
+}
+------
+2)class final and method final output : 
+Ans...
+final class A
+{
+    final void show()
+    {
+        System.out.println("Hello");
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        A obj=new A();
+        obj.show();
+    }
+}
+-----
+3)class final and method final (paramter) :output 
+Ans....
+final class A
+{
+    final void show(int a)
+    {
+        System.out.println("A is = "+a);
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        A obj=new A();
+        obj.show(25);
+    }
+}
+-----
+4)class final and method final addition (void)
+a)constant 
+--
+Ans...
+final class A
+{
+    final void add()
+    {
+        int a=25;
+        int b=14;
+        System.out.println("Add is = "+(a+b));
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        A obj=new A();
+        obj.add();
+    }
+}
+----
+b)user input
+Ans...
+import java.util.*;
+final class A
+{
+    final void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Add is = "+(a+b));
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        A obj=new A();
+        obj.add();
+    }
+}
+----- 
+
+5)class final and method final (paramter) addition(void) 
+Ans...
+import java.util.*;
+final class A
+{
+    final void add(int a,int b)
+    {
+        System.out.println("Add is = "+(a+b));
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A obj=new A();
+        obj.add(a, b);
+    }
+}
+-----
+6)class final and final method return type int addition (non paramter) 
+Ans...
+import java.util.*;
+final class A
+{
+    final int add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("Add is = "+c);
+        return c;
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.add();
+    }
+}
+-----
+7)class final and final method return type int add(paramter) 
+ method final output : 
+---
+Ans...
+import java.util.*;
+final class A
+{
+    final int add(int a,int b)
+    {
+        
+        int c=a+b;
+        System.out.println("Add is = "+c);
+        return c;
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A obj=new A();
+        obj.add(a,b);
+    }
+}
+---------------------------
+8)class final and method non final (paramter) :output 
+Ans..
+import java.util.*;
+final class A
+{
+    void sub(int a,int b)
+    {
+        
+        int c=a-b;
+        System.out.println("sub is = "+c);
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for sub");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A obj=new A();
+        obj.sub(a,b);
+    }
+}
+--------
+9)class final and method non final addition (void)
+a)constant 
+Ans..
+final class A
+{
+    void add()
+    {
+        int a=8;
+        int b=14;
+        int c=a+b;
+        System.out.println("Add is = "+c);
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.add();
+    }
+}
+-----
+b)user input 
+Ans..
+import java.util.*;
+final class A
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("Add is = "+c);
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.add();
+    }
+}
+--------
+10)class final and method non final (paramter) addition(void) 
+Ans...
+import java.util.*;
+final class A
+{
+    void add(int a,int b)
+    {
+        
+        int c=a+b;
+        System.out.println("Add is = "+c);
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for Add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A obj=new A();
+        obj.add(a,b);
+    }
+}
+--------
+11)class final and non final method return type int addition (non paramter) 
+Ans...
+import java.util.*;
+final class A
+{
+    int add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for Add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("Add is = "+c);
+        return c;
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.add();
+    }
+}
+--------
+12)class final and non final method return type int add(paramter) 
+Ans...
+import java.util.*;
+final class A
+{
+    int add(int a,int b)
+    {
+        
+        int c=a+b;
+        System.out.println("Add is = "+c);
+        return c;
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two number for Add");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        A obj=new A();
+        obj.add(a,b);
+    }
+}
+---------------------------------------------------------------------------
+
+13)class final and method final 
+can we use mulitple final in a single class 
+Ans..yes we can use
+show() 
+show1() 
+show2() 
+show3()
+---
+Ans...
+final class A
+{
+    final void show()
+    {
+        System.out.println("My ");
+    }
+    final void show2()
+    {
+        System.out.println("Name ");
+    }
+    final void show3()
+    {
+        System.out.println("is ");
+    }
+    final void show4()
+    {
+        System.out.println("Manish ");
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.show();
+        obj.show2();
+        obj.show3();
+        obj.show4();
+        
+    }
+}
+-----------------------------------------------------------
+14)class and method final 
+can we use mulitple final in a single class 
+Ans... yes we can use
+show() final 
+show1() non -final
+show2() final 
+show3() non-final
+---
+Ans...
+class A
+{
+    final void show()
+    {
+        System.out.println("My ");
+    }
+    void show2()
+    {
+        System.out.println("Name ");
+    }
+    final void show3()
+    {
+        System.out.println("is ");
+    }
+    void show4()
+    {
+        System.out.println("Manish ");
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.show();
+        obj.show2();
+        obj.show3();
+        obj.show4();
+        
+    }
+}
+-----------------------------------------------------------
+15)class and method final 
+can we use mulitple final in a single class 
+Ans.. Yes we can use
+show() final :parameter :return type 
+show1()  :parameter :return type 
+show2() final 
+show3() :parameter :return type 
+---
+Ans...
+class A
+{
+    final int show(int a)
+    {
+        System.out.println(a);
+        return a;
+    }
+    void show2(int b)
+    {
+        System.out.println(b);
+    }
+    final void show3()
+    {
+        System.out.println("Hello ");
+    }
+    int show4(int c)
+    {
+        System.out.println(c);
+        return c;
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.show(5);
+        obj.show2(36);
+        obj.show3();
+        obj.show4(25);
+        
+    }
+}
+-----------------------------------------------------------
+16) 
+class and method final 
+can we use mulitple final in a single class 
+Ans...Yes we can use
+show()  final (paramter)
+show1() 
+show2() final (paramter)
+show3()
+----
+Ans...
+class A
+{
+    final void show(int a)
+    {
+        System.out.println(a);
+    }
+    void show2(int b)
+    {
+        System.out.println(b);
+    }
+    final void show3(int c)
+    {
+        System.out.println(c);
+    }
+    void show4()
+    {
+        System.out.println("Hello ");
+    }
+}
+public class Main  
+{
+    public static void main(String[] args) 
+    { 
+        
+        A obj=new A();
+        obj.show(5);
+        obj.show2(36);
+        obj.show3(47);
+        obj.show4();
+        
+    }
+}
+---------------------------------------------

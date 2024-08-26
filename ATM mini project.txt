@@ -1,0 +1,81 @@
+import java.util.*;
+
+class ATM{
+    float balance;
+    int pin;
+    
+     void chackpin(){
+        System.out.println("enter your pin");
+        Scanner sc = new Scanner(System.in);
+        int pinn = sc.nextInt();
+        if(pinn == 1234){
+            System.out.println("Correct Pin");
+            menu();
+        }
+        else {
+            System.out.println("incurrect pin please a walid pin number ");
+        }
+    }
+     void menu(){
+        System.out.println("1 :chack_balance");
+        System.out.println("2 :withdrwal");
+        System.out.println("3 :diposit balance");
+        System.out.println("4 :exit");
+        Scanner sc = new Scanner(System.in);
+        int obt = sc.nextInt();
+        if (obt==1) {
+            ckackbalance();
+        }
+        else if (obt == 2) {
+            withdrowal();
+        }
+        else if(obt == 3){
+            diposit();
+        }
+        else if (obt == 4) {
+            exit();
+                
+        }
+    }
+    
+     void ckackbalance(){
+        System.out.println(" Your balance is :" + balance);
+        menu();
+    }
+     void withdrowal(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("emter amount");
+        int amount = sc.nextInt();
+        if (amount>balance) {
+            System.out.println("insafficient balnace");
+            withdrowal();
+        }
+        else{
+            balance = balance - amount;
+            System.out.println("withdrwal succesfully ="+ amount  );
+            menu();
+        }
+
+    }
+     void diposit(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("emter amount");
+        int amount = sc.nextInt();
+        balance = balance + amount;
+        System.out.println("deposit succesfully ="+ balance  );  
+        menu();
+      }
+       void exit(){
+        chackpin();
+      }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        ATM k = new ATM();
+        k.chackpin();
+        
+    }
+}

@@ -1,0 +1,859 @@
+// Write a C program to perform input/output of all basic data types.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int a = 10;
+        System.out.println(a);
+
+        float b=2.2f;
+        System.out.println(b);
+        
+        char c = sc.next().charAt(0);
+        System.out.println(c);
+
+        double d = 122122.12;
+        System.out.println(d);
+
+        long e = 12123123;
+        System.out.println(e);
+
+        short f = 12;
+        System.out.println(f);
+
+        byte g = 1;
+        System.out.println(g);
+
+        boolean h = true;
+        System.out.println(h);
+    }
+}
+
+
+// 2. Write a C program to enter two numbers and find their sum.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Number");
+        int b=sc.nextInt();
+        System.out.println(a+b);
+
+    }
+}
+
+// 3. Write a C program to enter two numbers and perform all arithmetic operations.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Number");
+        int b=sc.nextInt();
+        System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a/b);
+        System.out.println(a*b);
+        System.out.println(a%b);
+        
+
+    }
+}
+
+// // 4. Write a C program to enter length and breadth of a rectangle and find its
+// perimeter.
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter lenght");
+        int a=sc.nextInt();
+        System.out.println("Enter breadth");
+        int b=sc.nextInt();
+
+        System.out.println("perimeter of rectangle:" + 2*(a+b));
+
+        
+        
+
+    }
+}
+
+// 5. Write a C program to enter length and breadth of a rectangle and find its area.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter lenght");
+        int a=sc.nextInt();
+        System.out.println("Enter breadth");
+        int b=sc.nextInt();
+
+        System.out.println("Area of rectangle:" + a*b);
+
+        
+        
+
+    }
+}
+
+// 6. Write a C program to enter radius of a circle and find its diameter, circumference
+// and area.
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter radius");
+        int a=sc.nextInt();
+
+     float b=3.14f;
+
+        System.out.println("Diameter of Circle:" + 2*a);
+
+        System.out.println("Circumference of Circle:" + 2*b*a );
+
+        System.out.println("Area of Circle:" + b*(a*a) );
+
+        
+        
+
+    }
+}
+
+
+// 7. Write a C program to enter length in centimeter and convert it into meter and
+// kilometer.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter length in cm");
+        int a=sc.nextInt();
+
+        System.out.println("In Meter"+ a/100);
+        System.out.println("in km"+ a/1000);
+    }
+}
+
+// 8. Write a C program to enter temperature in Celsius and convert it into Fahrenheit.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter temp in celsius");
+        float a=sc.nextFloat();
+        float b=1.8f;
+        float k=a*b;
+        float r=k+32;
+        System.out.println("convert in Fahrenheit " + r);
+    }
+}
+
+// 9. Write a C program to enter temperature in Fahrenheit and convert to Celsius
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter temp in Fahrenheit");
+        float a=sc.nextFloat();
+        float k =a-32;
+        float r= k*5/9;
+        System.out.println("convert in Celsius " + r);
+    }
+}
+
+// 10.Write a C program to convert days into years, weeks and days.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Days");
+        int a=sc.nextInt();
+
+        System.out.println("Days in year"+ a/365);
+        System.out.println("Days in week"+ a/7);
+        System.out.println("Days in Month"+ a/30);
+    }
+}
+
+// 11. Write a C program to find power of any number x ^ y.
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number ");
+        int a=sc.nextInt();
+        System.out.println("Enter Power ");
+        int b=sc.nextInt();
+
+        int result=1;
+        for(int i=0;i<b;i++){
+           result *= a;
+           
+        }
+        System.out.print(result);
+
+
+
+    }
+}
+
+// 12.Write a C program to enter any number and calculate its square root.
+
+
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number to find square root ");
+        double a=sc.nextInt();
+
+        double result=Math.sqrt(a);
+        System.out.println(result);
+
+
+    }
+}
+
+// 13.Write a C program to enter two angles of a triangle and find the third angle.
+
+
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Angle ");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Angle ");
+        int b=sc.nextInt();
+
+        int angle=180-a-b;
+        System.out.println("Third Angle of triangle "+ angle);
+
+
+       
+
+
+    }
+}
+
+// 14.Write a C program to enter base and height of a triangle and find its area.
+
+
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Base  ");
+        int a=sc.nextInt();
+        System.out.println("Enter Height ");
+        int b=sc.nextInt();
+
+        float c=0.5f;
+        float d=c*a*b;
+
+        System.out.println("Area of triangle "+ d);
+
+    }
+}
+
+// 15.Write a C program to calculate area of an equilateral triangle.
+
+
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Area  ");
+        int a=sc.nextInt();
+        
+
+        float c=1.73f;
+        float d=c*a;
+        float e=d/4;
+        System.out.println("Area of Equilateral triangle "+ e);
+
+
+    }
+}
+
+// 16.Write a C program to enter marks of five subjects and calculate total, average
+// and percentage.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Subject");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Subject");
+        int b= sc.nextInt();
+        System.out.println("Enter 3rd Subject");
+        int c=sc.nextInt();
+        System.out.println("Enter 4th Subject");
+        int d=sc.nextInt();
+        System.out.println("Enter 5th Subject");
+        int e= sc.nextInt();
+
+        int total=a+b+c+d+e;
+        System.out.println("Total "+ total);
+        float average=total/500;
+        System.out.println("Average "+ average);
+        float percentage=average*100;
+        System.out.println("Percentage "+ percentage);
+
+
+    }
+}
+
+// 17.Write a C program to enter P, T, R and calculate Simple Interest.
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter P");
+        int a=sc.nextInt();
+        System.out.println("Enter T");
+        int b=sc.nextInt();
+        System.out.println("Enter R");
+        int c=sc.nextInt();
+
+        int d=a*b*c;
+        int e=d/100;
+
+        System.out.println("Simple Interest "+ e);
+
+
+
+    }
+}
+
+// 18.Write a C program to enter P, T, R and calculate Compound Interest.
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter P");
+        int p=sc.nextInt();
+        System.out.println("Enter R");
+        int r=sc.nextInt();
+        System.out.println("Enter T");
+        int t=sc.nextInt();
+
+        float percent=r/100;
+        float d=percent/t;
+        float e=1+d;
+        double f=Math.sqrt(e);
+        double g=p*f;
+        double h=g-p;
+        System.out.println("Compund interest "+ h);
+
+
+
+
+    }
+}
+
+// 19.Write a C program to find maximum between two numbers.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Number");
+        int b=sc.nextInt();
+        if(a>b){
+            System.out.println("a is max");
+        }
+        else if(b>a){
+            System.out.println("b is max");
+        }
+    }
+}
+
+// 20.Write a C program to find maximum between three numbers.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Number");
+        int b=sc.nextInt();
+        System.out.println("Enter 3rd Number");
+        int c=sc.nextInt();
+        if(a>b && a>c){
+            System.out.println("a is max");
+        }
+        else if(b>a && b>c){
+            System.out.println("b is max");
+        }
+
+        else if(c>a && c>b){
+            System.out.println("c is max");
+        }
+    }
+}
+
+// 21.Write a C program to check whether a number is negative, positive or zero.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        if(a>0){
+            System.out.println("Positive");
+        }
+        else if(a==0){
+            System.out.println("Zero");
+        }
+
+        else if(a<0){
+            System.out.println("Negative");
+        }
+    }
+}
+
+// 22.Write a C program to check whether a number is divisible by 5 and 11 or not.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        if(a%5==0 && a%11==0){
+            System.out.println("Number is divisible by 5 and 11");
+        }
+    }
+}
+
+// 23.Write a C program to check whether a number is even or odd.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        if(a%2==0){
+            System.out.println("Even");
+        }
+
+        else if(a%2!=0){
+            System.out.println("Odd");
+        }
+    }
+}
+
+// 24.Write a C program to check whether a year is leap year or not.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        if(a%400==0 || a%4==0){
+            System.out.println("Leap Year");
+        }
+        else{
+            System.out.println("Not a leap year");
+        }
+    }
+}
+
+
+//25 program to check whether a character is alphabet or not
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the charecter ");
+        char ch = sc.next().charAt(0);
+        int count=0,temp=0;
+        for(char i='a';i<='z';i++){
+            if (ch==i) {
+                
+                // System.out.println("charecter");
+                count++;
+            }   
+        }
+
+        for(char i='A';i<='Z';i++){
+            if (ch==i) {
+                
+                // System.out.println("charecter");
+                temp++;
+            }
+            
+        }
+        if(count!=0 || temp!=0)
+        {
+            System.out.println("Character");
+        }
+        else{
+            System.out.println("Not");
+        }
+
+    }
+}
+
+
+//26. program to input any alphabet and check whether it is vowel or
+// consonant.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter the charecter ");
+       char ch = sc.next().charAt(0);
+       
+        if (ch=='a' || ch=='e' || ch=='i' || ch=='o'|| ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O'|| ch=='U' ) {
+            System.out.println("charecter is vowel");
+        }else if ((ch>='a' && ch<='z')||(ch>='A' && ch<='Z')) {
+            System.out.println("consonent");
+        }else{
+            System.out.println("please enter charater ");
+        }
+       
+       
+
+    }
+}
+
+//27. program to input any character and check whether it is alphabet, digit
+// or special character.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter the charecter ");
+       char ch = sc.next().charAt(0);
+       
+
+       
+       if ((ch>='a' && ch<='z')||(ch>='A' && ch<='Z')) {
+            System.out.println("alphabet");
+        }else if (ch>='0' && ch<='9') {
+            System.out.println("digit");
+        }else{
+            System.out.println("special character");
+        }
+       
+       
+
+    }
+}
+
+
+//28. program to check whether a character is uppercase or lowercase
+// alphabet.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter the charecter ");
+       char ch = sc.next().charAt(0);
+       if (ch>='a' && ch<='z') {
+        System.out.println("lowercase");
+       }else if (ch>='A' && ch<='Z') {
+        System.out.println("uppercase ");
+       }
+    }
+}
+
+
+//29. program to input week number and print week day.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       if (a==1) {
+        System.out.println("sunday");
+       }else if (a==2) {
+        System.out.println("monday");
+       }else if (a==3) {
+        System.out.println("tuesday");
+       }else if (a==4) {
+        System.out.println("wedesday");
+       }else if (a==5) {
+        System.out.println("thusday");
+       }else if (a==6) {
+        System.out.println("friday");
+       }else if (a==7) {
+        System.out.println("sat");
+       }else{
+        System.out.println("enter valid number ");
+       }
+
+    }
+}
+
+// 30. program to input month number and print number of days in that
+// month.
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       if (a==1) {
+        System.out.println("jan");
+       }else if (a==2) {
+        System.out.println("feb");
+       }else if (a==3) {
+        System.out.println("march");
+       }else if (a==4) {
+        System.out.println("april");
+       }else if (a==5) {
+        System.out.println("may");
+       }else if (a==6) {
+        System.out.println("june");
+       }else if (a==7) {
+        System.out.println("july");
+       }else if (a==8) {
+        System.out.println("aguset");
+       }else if (a==9) {
+        System.out.println("septamber");
+       }else if (a==10) {
+        System.out.println("octuber");
+       }else if (a==11) {
+        System.out.println("nevamber");
+       }else if (a==12) {
+        System.out.println("decamber");
+       }else{
+        System.out.println(" not valid ");
+       }
+
+
+    }
+}
+
+//31. program to count total number of notes in given amount
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter amount");
+       int a = sc.nextInt();
+       int n500,n100,n50,n20,n10,n5,n1,n2;
+       n10=n100=n20=n5=n50=n500=n1=n2=0;
+       if (a>=500) {
+          n500 = a/500;
+          a = a- n500*500;
+       } if (a>=100) {
+         n100 = a/100;
+         a = a-n100*100;
+       } if (a>=50) {
+        n50 = a/50;
+        a = a-n50*50;
+      } if (a>=20) {
+        n20 = a/20;
+        a = a-n20*20;
+      } if (a>=10) {
+        n10 = a/10;
+        a = a-n10*10;
+      } if (a>=5) {
+        n5 = a/5;
+        a = a-n5*5;
+      }  if (a>=2) {
+        n2 = a/2;
+        a = a-n2*2;
+      }           
+       if (n1>=a) {
+        n1=a;
+      }
+
+       System.out.println("500 =" + n500);
+       System.out.println("100 =" + n100);
+       System.out.println("50 =" + n50);
+       System.out.println("20 =" + n20);
+       System.out.println("10 =" + n10);
+       System.out.println("5 =" + n5);
+       System.out.println("1 =" + n1);
+       System.out.println("2 =" + n2);
+
+
+
+    }
+}
+
+
+//32.  program to input angles of a triangle and check whether triangle is
+// valid or not.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter angles");
+       int angle1 = sc.nextInt();
+       int angle2 = sc.nextInt();
+       int angle3 = sc.nextInt();
+       if (angle1+angle2+angle3==180) {
+         System.out.println("valid angle");
+       }else{
+        System.out.println("not valid angle");
+       }
+
+
+    }
+}
+
+//33. program to input all sides of a triangle and check whether triangle is
+// valid or not.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter angles");
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+       int c = sc.nextInt();
+       if (a==b && b==c && c==a) {
+         System.out.println("valid angle");
+       }else{
+        System.out.println("not valid angle");
+       }
+
+
+    }
+}
+
+//34. program to check whether the triangle is equilateral, isosceles or
+// scalene triangle
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter angles");
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+       int c = sc.nextInt();
+       if (a==b && b==c && c==a) {
+         System.out.println("equilateral triangle");
+       }else if (a==b || b==c || c==a) {
+        System.out.println("=isosceles triangle");
+       }else{
+        System.out.println("scalene triangle");
+       }
+
+
+    }
+}
+
+
+

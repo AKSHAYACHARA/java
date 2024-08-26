@@ -1,0 +1,777 @@
+// abstract class A 
+// abstract method add()
+// abstract method sub()
+// abstract method multi()
+// abstract method div()
+// abstract method modular()
+
+// class B ex A
+
+// Main 
+// access
+
+// user input 
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub();
+    abstract void multi();
+    abstract void div();
+    abstract void modular();
+}
+ class B extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    void multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+
+    }
+    void div()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a / b;
+        System.out.println(c + " two value division");
+
+    }
+    void modular()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+
+    }
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+        B k = new B();
+        k.add();
+        k.sub();
+        k.multi();
+        k.div();
+        k.modular();
+    }
+}
+
+
+
+// abstract class A 
+// abstract method add() :no return and no argument 
+// abstract method sub():no return and  argument
+// abstract method multi(): return and no argument
+// abstract method div(): return and  argument
+// abstract method modular(): return and  argument
+
+// class B ex A
+
+// Main 
+// access
+
+// user input
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub(int a , int b);
+    abstract int multi();
+    abstract int  div(int a , int b);
+    abstract int modular(int a , int b);
+}
+ class B extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        System.out.println("enter div c value ");
+        int c = sc.nextInt();
+        System.out.println("enter div d value ");
+        int d = sc.nextInt();
+        System.out.println("enter modelur e value ");
+        int e = sc.nextInt();
+        System.out.println("enter modelur f value ");
+        int f = sc.nextInt();
+        B k = new B();
+        k.add();
+        k.sub(a,b);
+        k.multi();
+        k.div(c,d);
+        k.modular(e,f);
+    }
+}
+
+
+
+
+// abstract class A 
+// abstract method add() :no return and no argument 
+// abstract method sub():no return and  argument
+// abstract method multi(): return and no argument
+// abstract method div(): return and  argument
+// abstract method modular(): return and  argument
+
+// class B ex A
+
+// class C ex B 
+
+// Main 
+// access
+
+// user input
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub(int a , int b);
+    abstract int multi();
+    abstract int  div(int a , int b);
+    abstract int modular(int a , int b);
+}
+ class B extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+
+}
+class C extends B{
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        System.out.println("enter div c value ");
+        int c = sc.nextInt();
+        System.out.println("enter div d value ");
+        int d = sc.nextInt();
+        System.out.println("enter modelur e value ");
+        int e = sc.nextInt();
+        System.out.println("enter modelur f value ");
+        int f = sc.nextInt();
+        C k = new C();
+        k.add();
+        k.sub(a,b);
+        k.multi();
+        k.div(c,d);
+        k.modular(e,f);
+    }
+}
+
+
+
+// abstract class A 
+// abstract method add() :no return and no argument 
+// abstract method sub():no return and  argument
+// abstract method multi(): return and no argument
+// abstract method div(): return and  argument
+// abstract method modular(): return and  argument
+
+// class B ex A
+
+
+// class C ex A
+
+// Main 
+// access
+
+// user input
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub(int a , int b);
+    abstract int multi();
+    abstract int  div(int a , int b);
+    abstract int modular(int a , int b);
+}
+ class B extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+
+}
+class C extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        System.out.println("enter div c value ");
+        int c = sc.nextInt();
+        System.out.println("enter div d value ");
+        int d = sc.nextInt();
+        System.out.println("enter modelur e value ");
+        int e = sc.nextInt();
+        System.out.println("enter modelur f value ");
+        int f = sc.nextInt();
+        B k1 = new B();
+        k1.add();
+        k1.sub(a,b);
+        k1.multi();
+        k1.div(c,d);
+        k1.modular(e,f);
+        C k = new C();
+        k.add();
+        k.sub(a,b);
+        k.multi();
+        k.div(c,d);
+        k.modular(e,f);
+    }
+}
+
+
+
+
+// abstract class A 
+// abstract method add() :no return and no argument 
+// abstract method sub():no return and  argument
+// abstract method multi(): return and no argument
+// class B ex A
+// div(): return and  argument
+// modular(): return and  argument
+// Main 
+// access
+// user input
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub(int a , int b);
+    abstract int multi();
+    
+}
+ class B extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        System.out.println("enter div c value ");
+        int c = sc.nextInt();
+        System.out.println("enter div d value ");
+        int d = sc.nextInt();
+        System.out.println("enter modelur e value ");
+        int e = sc.nextInt();
+        System.out.println("enter modelur f value ");
+        int f = sc.nextInt();
+        B k1 = new B();
+        k1.add();
+        k1.sub(a,b);
+        k1.multi();
+        k1.div(c,d);
+        k1.modular(e,f);
+    }
+}
+
+
+
+// abstract class A 
+// covarinat return type =>
+// abstract method add():return and no argumnet 
+// abstract method sub():return and no argumnet 
+// class B ex A
+// Main 
+// access
+// user input 
+
+import java.util.*;
+
+abstract class A{
+    abstract  A add();
+    abstract A sub();
+    
+    
+}
+ class B extends A{
+    A add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+       return this;
+    }
+
+    A sub()
+    { 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+       return this;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        B k1 = new B();
+        k1.add();
+        k1.sub();
+    }
+}
+
+
+
+
+// abstract class A 
+// abstract method add() :no return and no argument 
+// abstract method sub():no return and  argument
+// class B ex A
+// abstract class C
+// abstract method multi(): return and no argument
+// abstract method div(): return and  argument
+// abstract method modular(): return and  argument
+// class D ex C
+// Main class 
+// access
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub(int a , int b);
+}
+ class B extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    
+
+}
+abstract class C 
+{
+    abstract int multi();
+    abstract int  div(int a , int b);
+    abstract int modular(int a , int b );
+}
+
+class D extends C{
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        System.out.println("enter div c value ");
+        int c = sc.nextInt();
+        System.out.println("enter div d value ");
+        int d = sc.nextInt();
+        System.out.println("enter modelur e value ");
+        int e = sc.nextInt();
+        System.out.println("enter modelur f value ");
+        int f = sc.nextInt();
+        B k = new B();
+        k.add();
+        k.sub(a,b);
+        D k1 = new D();
+        k1.multi();
+        k1.div(c,d);
+        k1.modular(e,f);
+    }
+}
+
+
+
+
+// abstract class A 
+// abstract method add() :no return and no argument 
+// abstract method sub():no return and  argument
+// abstract method multi(): return and no argument
+// abstract method div(): return and  argument
+// abstract method modular(): return and  argument
+// class Main ex A
+// main method access 
+
+import java.util.*;
+
+abstract class A{
+    abstract  void add();
+    abstract void sub(int a , int b);
+    abstract int multi();
+    abstract int  div(int a , int b);
+    abstract int modular(int a , int b);
+}
+public class Main extends A{
+    void add(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter add a value ");
+        int a = sc.nextInt();
+        System.out.println("enter add b value ");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c + " two value addition");
+
+    }
+
+    void sub(int a ,int b)
+    {
+        int c = a - b;
+        System.out.println(c + " two value substerction ");
+
+    }
+    int multi()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter multi a value ");
+        int a = sc.nextInt();
+        System.out.println("enter multi b value ");
+        int b = sc.nextInt();
+        int c = a * b;
+        System.out.println(c + " two value multiplication");
+        return c ;
+    }
+    int div(int a , int b)
+    {
+        
+        int c = a / b;
+        System.out.println(c + " two value division");
+        return c;
+    }
+    int modular(int a ,int b)
+    {
+        
+        int c = a % b;
+        System.out.println(c + " two value moduler");
+        return c;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter sub a value ");
+        int a = sc.nextInt();
+        System.out.println("enter sub b value ");
+        int b = sc.nextInt();
+        System.out.println("enter div c value ");
+        int c = sc.nextInt();
+        System.out.println("enter div d value ");
+        int d = sc.nextInt();
+        System.out.println("enter modelur e value ");
+        int e = sc.nextInt();
+        System.out.println("enter modelur f value ");
+        int f = sc.nextInt();
+        Main k = new Main();
+        k.add();
+        k.sub(a,b);
+        k.multi();
+        k.div(c,d);
+        k.modular(e,f);
+    }
+}
+
+
+

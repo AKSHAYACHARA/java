@@ -1,0 +1,171 @@
+// 1)
+// 23,67,56,2,78,45,12 
+// first element table print 
+// last element table print 
+// mid element table print 
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        
+       for(int j=1; j<=10;j++){
+        if (a.length>0) {
+            System.out.print(a[0]*j + " ");
+        }
+       }
+       System.out.println(" ");
+       for(int j=1; j<=10;j++){
+        if (a.length>0) {
+            System.out.print(a[a.length-1]*j + " ");
+        }
+       }
+       System.out.println(" ");
+       for(int j=1; j<=10;j++){
+        if (a.length>0) {
+            System.out.print(a[a.length/2]*j + " ");
+        }
+       }
+   }
+        
+}
+        
+       
+    
+
+---------------------------------------------------------------------
+
+
+// 2)
+// 23,67,56,2,78,45,12 
+// first element and last element swap 
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter the size ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        System.out.println("enter the value of array 'A'");
+        for(int i=0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        System.out.print(" array number without swaping: ");
+        for(int j=0;j<a.length;j++){
+            System.out.print(a[j] + " ");
+        }
+        System.out.println(" ");
+        if (a.length>1) {
+            int temp = a[0];
+            a[0] = a[a.length-1];
+            a[a.length-1] = temp;
+            System.out.print(" first element and last element swap: ");
+            for(int k=0;k<a.length;k++){
+        
+                System.out.print(a[k] + " ");
+            }
+        }
+       
+        else
+        {
+            System.out.println(" ");
+            System.out.print(" only one element in the  array  ");
+        }
+       
+   }
+        
+}
+        
+       
+    
+
+-----------------------------------------------------------------------------------
+
+
+// 3)
+// 23,67,56,2,78,45,12 
+
+// sort 
+// first element table print 
+// last element table print 
+// mid element table print 
+
+import java.util.*;
+public class Main {
+
+    public static void printRow(int a[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" enter value of array 'A' ");
+        for(int i = 0;i<a.length;i++){
+            a[i] = sc.nextInt();
+        }
+        
+        for(int i = 0 ; i<a.length;i++){
+            System.out.print(a[i] + " ");
+        }
+        for(int k=1;k<=10;k++){
+            if (a.length>0) {
+                System.out.print(a[0]*k + " ");
+            }
+        }
+        System.out.println();
+        for(int k=1;k<=10;k++){
+            if (a.length>0) {
+                System.out.print(a[a.length-1]*k + " ");
+            }
+        }
+        System.out.println();
+        for(int k=1;k<=10;k++){
+            if (a.length>0) {
+                System.out.print(a[a.length/2]*k + " ");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter size ");
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+           
+        printRow(arr);
+        
+        
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

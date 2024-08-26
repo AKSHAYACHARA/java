@@ -1,0 +1,91 @@
+1)string :java is learning language. 
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		String java = new String("java is learning language ");
+	   System.out.println(java + " ");
+	}
+}
+
+2)string :java is learning language. 
+loop k through print 
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  String name = "java is learning langauage ";
+	  char a[] = name.toCharArray();
+	  for (int i=0;i<a.length ;i++ ) {
+	     System.out.print(a[i]);
+	  }
+	   
+	}
+}
+
+
+3)string :java is learning language. 
+reverse 
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 
+	    String name = new String("java is learning language");
+	    char arr[] = name.toCharArray();
+	    for (int i=arr.length-1;i>=0 ;i-- ) {
+	        System.out.print(arr[i]);
+	    }
+	 
+	  }
+}
+
+
+
+4)string :java is learning language. 
+length
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 String name = new String("java is learning language");
+	 int count = 0;
+	 char a[] =name.toCharArray();
+	 for (int i=0;i<a.length ;i++ ){
+	     count++;
+	 } 
+	 System.out.print(count + " ");
+	   
+	}
+}
+
+
+5)string :java is learning language. 
+count :
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	 String name = new String("java is learning language");
+	 int count = 0;
+	 char a[] =name.toCharArray();
+	 for (int i=0;i<a.length ;i++ ){
+	     count++;
+	 } 
+	 System.out.print(count + " ");
+	   
+	}
+}
+
+
+--------------------------------------------------------------
+
+
+
+

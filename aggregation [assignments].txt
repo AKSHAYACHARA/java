@@ -1,0 +1,530 @@
+question 7)
+
+// aggregation user define :
+
+// A file 
+// instance :
+// String 
+// float 
+
+// Main file 
+// class B :
+// instance 
+// print 
+
+// main() 
+// access 
+
+class B {
+    int a;
+    A k;
+
+    B(int a,A k){
+        this.a = a;
+        this.k = k;
+    }
+    void show(){
+        System.out.println("the value of a "+a);
+        System.out.println("name :"+ k.name +"value of area " + k.area);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        A r = new A("akshay", 23.12f);
+        B w = new B(23, r);
+        w.show();
+    }
+}
+
+A.java
+
+class A{
+    String name;
+    float area;
+    A(String name , float area){
+        this.name = name ;
+        this.area = area ;
+    }
+    
+
+}
+
+...............................................................................................................
+
+question 8)
+// A file 
+// byte 
+// short 
+
+// B file 
+// int 
+// float
+
+// C file 
+// double 
+// bollean
+
+// D file 
+// char 
+// String 
+
+// Main file 
+// E class :
+// userdefine class and object k through print krna hey 
+
+// main method :
+// access 
+class E{
+    A k;
+    B g;
+    C t;
+    D e;
+
+    E(A k,B g,C t,D e){
+        this.k = k;
+        this.g = g;
+        this.t = t;
+        this.e = e;
+    }
+    void akshay(){
+        System.out.println("short value " + k.b +"byte value " + k.a  );
+        System.out.println("int value " + g.a + " float value " + g.b);
+        System.out.println("double value " + t.a + " boolean value " + t.falue);
+        System.out.println("char value " + e.ch + "String value " + e.name);
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        A q = new A(0,9);
+        B w = new B(232, 23.23f);
+        C z = new C(232423, false);
+        D x = new D('A', "Akshay");
+
+        E c = new E(q, w, z, x);
+    }
+}
+
+
+A.java
+
+
+class A{
+    int b;
+    int a;
+    A(int b ,int a ){
+        this.b = b;
+        this.a = a;
+        
+    }
+}
+
+
+B.java
+
+
+class B{
+   int a;
+   float b;
+   B(int a,float b){
+      this.a=a;
+      this.b=b;
+   }
+}
+
+
+C.java
+
+
+class C{
+    double a;
+    boolean falue;
+    C(double a,boolean falue){
+        this.a=a;
+        this.falue=falue;
+    }
+}
+
+
+D.java
+
+
+class D{
+    char ch;
+    String name;
+    D(char ch,String name){
+        this.ch = ch;
+        this.name = name;
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------
+question 9)
+
+// employe file 
+
+// id 
+// name
+// email
+// password 
+// number 
+// address 
+// adhar number 
+
+// constructor 
+
+// Main file :
+// class A
+// employe print 
+
+// main method :access 
+
+class A{
+    Employe k;
+    A(Employe k){
+        this.k = k;
+    }
+    void employe(){
+        System.out.println("user id " + k.id );
+        System.out.println("user name " + k.name );
+        System.out.println("user email " + k.email );
+        System.out.println("user password " + k.password );
+        System.out.println("user number " + k.number );
+        System.out.println("user address " + k.address );
+        System.out.println("user adher number " + k.adhar_card );
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        Employe w = new Employe(1234, "Akshay", "akshay123@gmail.com", 548934, 87767866, "house no c-9 sdksjdskds ", 35353454);
+        A x = new A(w);
+        x.employe();
+    }
+}
+
+
+Employe.java
+
+
+class Employe{
+    int id;
+    String name;
+    String email;
+    int password;
+    int number;
+    String address;
+    long adhar_card;
+    Employe(int id,String name,String email,int password,int number, String address,long adhar_card){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.number = number;
+        this.address = address;
+        this.adhar_card = adhar_card;
+        
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// 1)
+// A.java
+// class :abstract type 
+// method1:abstract :no retrun and no argument 
+// method2:abstract :no retrun and  argument 
+// method3:abstract : retrun and no argument 
+// method4:abstract : retrun and  argument 
+
+// A class ex abstract 
+
+
+// Main access
+
+// user input 
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter no ");
+        int a = sc.nextInt(); 
+        System.out.println(" enter no ");
+        int b = sc.nextInt(); 
+        B k = new B();
+        k.method1();
+        k.method2(a);
+        k.method3();
+        k.method4(b);
+
+    }
+}
+
+
+
+B.java
+
+
+import java.util.*;
+abstract class A{
+   abstract void method1();
+   abstract void method2(int a);
+   abstract int method3();
+   abstract int  method4(int a);
+}
+
+class B extends A{
+     void method1(){
+      Scanner sc = new Scanner(System.in);
+      System.out.println(" enter no ");
+       int a = sc.nextInt(); ;
+      System.out.println("method1" + a );
+     }
+     void method2(int a){
+      System.out.println("method2" );
+     }
+     int  method3(){
+      Scanner sc = new Scanner(System.in);
+      System.out.println(" enter no ");
+      int a = sc.nextInt(); ;
+      System.out.println("method3" + a);
+      return a;
+     }
+     int method4(int a){
+      System.out.println("method4");
+      return a;
+     }
+}
+
+
+-----------------------------------------------------------------------------------------------
+
+
+
+// 3)A.java
+
+// interface
+// method1: :no retrun and no argument 
+// method2: :no retrun and  argument 
+// method3: : retrun and no argument 
+// method4: : retrun and  argument 
+
+// A class 
+
+
+// Main access
+
+// user input 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the A value ");
+        int a = sc.nextInt();
+        System.out.println("enter the B value ");
+        int b = sc.nextInt();
+        C k = new C();
+        k.method1();
+        k.method2(a);
+        k.method3();
+        k.method4(b);
+    }
+}
+
+C.java
+
+import java.util.*;
+
+interface A {
+   void method1();
+   void method2(int a);
+   int method3();
+   int method4(int a);
+    
+}
+
+class C implements A{
+   public void method1(){
+    Scanner sc = new Scanner(System.in);
+    System.out.println(" method1 enter the A value ");
+    int a = sc.nextInt();
+    System.out.println(a + " method1 ");
+    }
+    public void method2(int a){
+        System.out.println("enter the A value ");
+        System.out.println(a + " method2 ");
+    }
+    public int method3(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the A value ");
+        int a = sc.nextInt();
+        System.out.println(a + " method3 ");
+        return 0;
+    }
+    public int method4(int a){
+        System.out.println("enter the A value ");
+        System.out.println(a + " method4 ");
+        return 0;
+    }
+}
+
+-----------------------------------------------------------------------------------
+
+
+
+// 4)
+// A.java
+// interface 
+// method1:non abstract :no retrun and no argument 
+// method2:non abstract :no retrun and  argument 
+// method3:abstract : retrun and no argument 
+// method4:abstract : retrun and  argument 
+// A class 
+// Main access
+// user input 
+
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter A mathod2 value ");
+        int a = sc.nextInt();
+        System.out.println("enter B mathod4 value ");
+        int b = sc.nextInt();
+        C k = new C();
+        k.method1();
+        k.method2(a);
+        k.method3();
+        k.method4(b);
+     }
+}
+
+ C.java       
+
+import java.util.*;
+
+interface A {
+   void method1();
+   void method2(int a);
+   abstract int method3();
+   abstract int method4(int a);
+    
+}
+
+ class C implements A{
+    public void method1(){
+    Scanner sc = new Scanner(System.in);
+    System.out.println(" method1 enter the A value ");
+    int a = sc.nextInt();
+    System.out.println(a + " method1 ");
+    }
+    public void method2(int a){
+        System.out.println(" method2 enter the A value ");
+        System.out.println(a + " method2 ");
+    }
+    public int method3(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" method3 enter the A value ");
+        int a = sc.nextInt();
+        System.out.println(a + " method3 ");
+        return 0;
+    }
+    public int method4(int a){
+        System.out.println(" method4 enter the A value ");
+        System.out.println(a + " method4 ");
+        return 0;
+    }
+}
+
+-----------------------------------------------------------------------------------------------------
+
+
+// 5)
+// A.java
+// interface C
+// method1: :no retrun and no argument 
+// interface D
+// method2: :no retrun and  argument 
+// interface E
+// method3: : retrun and no argument 
+// A impl
+// method4: : retrun and  argument 
+// Main java :
+// Main :access
+
+import java.util.*;
+
+public class Main  {
+
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter A mathod2 value ");
+        int a = sc.nextInt();
+        System.out.println("enter B mathod4 value ");
+        int b = sc.nextInt();
+        C k = new C(); 
+        k.method1();
+        k.method2(a);
+        k.method3();
+        k.method4(b);
+     }
+}
+
+C.java
+        
+import java.util.*;
+
+interface A {
+    void method1();
+}
+interface B  {
+    void method2(int a);
+}
+interface D {
+   int method3();
+}
+ class C implements A,B,D{
+    public void method1(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the method1 of A ");
+        int a = sc.nextInt();
+        System.out.println(a + " method1 ");
+    }
+    public void method2(int a){
+        System.out.println("enter the method4 of D ");
+        System.out.println(a + " method2 ");
+    }
+    public int method3(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the method1 of  C");
+        int c = sc.nextInt();
+        System.out.println(c + " method 3");
+        return c;
+    }
+   public int method4(int b){
+    System.out.println("enter the method4 of D ");
+    System.out.println(b + " method4 ");
+    return b;
+    }
+}
+-----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
