@@ -1,0 +1,191 @@
+//1 ArrayList :
+
+//heterogenous data stored 
+
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList al = new ArrayList<>();
+        al.add(1);
+        al.add("akshay");
+        al.add("a");
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+--------------------------------------
+
+
+// 2.ArrayList :
+
+// homogenous data stored :
+// used wrapper classes in java 
+// Integer | Character | String | Byte | Short | Float | Boolean |Long | Double 
+
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        
+        al.add(1);
+        al.add(2);
+        al.add(3);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<String> al = new ArrayList<>();
+        
+        al.add("Akshay");
+        al.add("Aarush");
+        al.add("Rakesh");
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Character> al = new ArrayList<>();
+        
+        al.add('a');
+        al.add('b');
+        al.add('c');
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Byte> al = new ArrayList<>();
+        
+        al.add((byte)1);
+        al.add((byte)2);
+        al.add((byte)3);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}	
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Short> al = new ArrayList<>();
+        
+        al.add((short)1);
+        al.add((short)2);
+        al.add((short)3);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Float> al = new ArrayList<>();
+        
+        al.add(1221.12f);
+        al.add(323.232f);
+        al.add(121.233f);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Boolean> al = new ArrayList<>();
+        
+        al.add(true);
+        al.add(false);
+        al.add(true);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Long> al = new ArrayList<>();
+        
+        al.add(12121l);
+        al.add(76576l);
+        al.add(9879l);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+package collection;
+import java.util.*;
+public class A {
+    public static void main(String[] args) {
+        ArrayList<Double> al = new ArrayList<>();
+        
+        al.add(12121d);
+        al.add(76576d);
+        al.add(9879d);
+        System.out.println(al + " ");
+
+    }
+    
+    
+    
+}
+
+
+----------------------------------
+
+
+
+

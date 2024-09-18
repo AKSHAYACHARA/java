@@ -1,6 +1,6 @@
-/*
+
 1)C program to find out whether a given year is a leap year or not:
-*/
+
 
 import java.util.*;
 
