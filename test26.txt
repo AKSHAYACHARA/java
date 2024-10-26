@@ -1,0 +1,382 @@
+import java.util.*;
+public class RemoveDuplicate{
+public static void main(String[] args) {
+    List<Integer> list = new ArrayList<>();
+    list.add(20);
+    list.add(30);
+    list.add(30);
+    list.add(50);
+    list.add(60);
+    list.add(60);
+
+    LinkedHashSet <Integer> set = new LinkedHashSet<>(list);
+    list.clear();
+    list.addAll(set);
+
+    for(int i : list){
+        System.out.print(i + " ");
+    }
+ }
+}
+
+
+---------------------------------------------------------
+
+
+
+abstract class Vehicle{
+    abstract void start();
+    abstract void stop();
+
+}
+
+  class Car extends Vehicle implements FuelEfficiency{
+    void start(){
+       System.out.println("start car");
+    } 
+     void stop(){
+      System.out.println("stop car");
+    }
+}
+
+ class Bike extends Vehicle implements FuelEfficiency{
+
+     void start(){
+        System.out.println("start bike");
+    } 
+    void stop(){
+        System.out.println("stop bike");
+
+    }
+    
+}
+
+interface FuelEfficiency{
+   default void calculateFuelEfficiency(){
+        System.out.println("Fuel  Efficiency ");
+    }
+}
+
+
+public class Abs {
+    public static void main(String[] args) {
+        Car k = new Car();
+        Bike o = new Bike();
+        k.start();
+        k.stop();
+        k.calculateFuelEfficiency();
+        o.start();
+        o.stop();
+        o.calculateFuelEfficiency();
+        
+    }
+}
+
+-------------------------------------------------------------
+
+
+1)
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> a = new ArrayList<>();
+        a.add(20);
+        a.add(40);
+        a.add(60);
+        a.add(80);
+        a.add(40);
+
+        LinkedHashSet<Integer> set = new LinkedHashSet<>(a);
+        a.clear();
+        a.addAll(set);
+       
+        for (int i : a) {
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+
+
+2)abstract class Vehicle{
+    abstract void start();
+    abstract void stop();
+}
+
+
+interface Fuelefficiency {
+default void calculateFuelEfficiency(){
+    System.out.println("Fuel Efficiency");
+}
+}
+
+class Car extends Vehicle implements Fuelefficiency{
+    void start(){
+        System.out.println("Start");
+    }
+    void stop(){
+        System.out.println("Stop");
+    }
+}
+class Bike extends Vehicle implements Fuelefficiency{
+
+    void start(){
+        System.out.println("Start");
+    }
+    void stop(){
+        System.out.println("Stop");
+    }
+}
+
+
+public class B {
+    public static void main(String[] args) {
+        Car k= new Car();
+        Bike k1=new Bike();
+        k.start();
+        k.stop();
+        k.calculateFuelEfficiency();
+        k1.start();
+        k1.stop();
+        k1.calculateFuelEfficiency();
+    }
+}
+
+
+
+
+
+
+3)
+
+
+import java.util.Scanner;
+
+class BankAccount{
+    private int A_no;
+    private float Balance;
+   
+    void Aset(int A_no,float Balance){
+        if(A_no>0000 && A_no<9999 && Balance>0){
+        this.A_no=A_no;
+        this.Balance=Balance;
+        }
+    }
+
+    int Aget(){
+        return A_no;
+    }
+
+    float Aget1(){
+        return Balance;
+    }
+
+    void deposit(){
+        if(A_no>=0000 && A_no<=9999 && Balance>0){
+            Aget();
+            Aget1();
+        }
+        System.out.println("Amount Deposit");
+    }
+
+    void withdraw(){
+        if(A_no>=0000 && A_no<=9999 && Balance>0){
+            Aget();
+            Aget1();
+        }
+        System.out.println("Amount Withdraw");
+    }
+   
+}
+public class Encapsule {
+    public static void main(String[] args) {
+        BankAccount k=new BankAccount();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Account Number of 4 Digit");
+        int A_no=sc.nextInt();
+        System.out.println("Enter Balance Greater than 0");
+        float Balance=sc.nextFloat();
+        k.Aset(A_no, Balance);
+        System.out.println(k.Aget());
+        System.out.println(k.Aget1());
+        k.deposit();
+        k.withdraw();
+
+    }
+}
+----------------------------------------------
+
+4)
+
+
+import java.util.ArrayList;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> a= new ArrayList<>();
+        a.add(20);
+        a.add(40);
+        a.add(60);
+        a.add(20);
+        a.add(40);
+        for(int i:a){
+            System.out.println(i);
+        }
+
+        for(int i=0;i<a.size();i++){
+            for(int j=i+1;j<a.size();j++){
+                if(a.get(i)==a.get(j)){
+                    a.set(j, -1);
+                }
+            }
+        }
+
+        for(int i=0;i<a.size();i++){
+            if(a.get(i)>0){
+                System.out.print(a.get(i)+" ");
+            }
+        }
+   
+    }
+}
+
+
+-----------------------------------------------------------------
+5)
+
+import java.util.Scanner;
+public class Pascal {
+
+    
+    static void printArray(int a[][]) { 
+        for (int i = 0; i < a.length; i++) { 
+            for (int j = 0; j < a[i].length; j++) { 
+                System.out.print(a[i][j] + " "); 
+            }
+            System.out.println(); 
+        }
+    } 
+    static int[][] printPascal(int n) { 
+        int step[][] = new int[n][]; 
+        for (int i = 0; i < n; i++) { 
+            step[i] = new int[i + 1]; 
+            step[i][0] = step[i][i] = 1; 
+            for (int j = 1; j < i; j++) { 
+                step[i][j] = step[i - 1][j - 1] + step[i - 1][j]; 
+            } 
+        } 
+        return step; 
+    } 
+
+    public static void main(String[] args) { 
+        Scanner sc = new Scanner(System.in); 
+        System.out.print("Enter  Pascal triangle: "); 
+        int rows = sc.nextInt(); 
+        
+        if (rows < 1) {
+            System.out.println("Please enter a positive integer.");
+            return;
+        }
+
+        int arr[][] = printPascal(rows); 
+        printArray(arr); 
+    }
+}
+
+
+--------------------------------------------------------
+6)
+
+class A extends Thread implements Runnable{
+    public void run(){
+       for(int i=1;i<=10;i++){
+        if (i%2==0) {
+            System.out.println(i);
+        }
+       }
+       System.out.println();
+    }
+}
+
+class B extends Thread implements Runnable{
+    public void run(){
+        for(int i=1;i<=10;i++){
+          if (i%2==1) {
+            System.out.println(i);
+          }
+        }
+    }
+}
+
+
+public class Thred {
+    public static void main(String[] args) {
+        A obj = new A();
+        B boj1 = new B();
+        obj.run();
+        boj1.run();
+    }
+}
+
+----------------------------------------------------------------
+
+
+8)
+
+public class Main extends Exception{
+
+    public Main(int a,int b){
+        System.out.println(a/b);        
+    }
+
+    public static void main(String[] args) {
+
+        int a=10;
+        int b=0;
+
+        try{
+            throw new Main(a, b);
+        }
+        catch(Main ex){
+            System.out.println(ex.getMessage());
+        }
+    }
+}
+
+
+
+9)
+
+import java.util.Scanner;
+
+public class Main extends Exception{
+
+    public Main(int Number){
+        System.out.println(Number);        
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Phone Number");
+        int b=sc.nextInt();
+
+        try{
+            throw new Main(b);
+        }
+        catch(Main ex){
+            System.out.println(ex.getMessage());
+        }
+    }
+}
+
+
+
+
+
